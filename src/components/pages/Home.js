@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../pages/Home.css'
 import img from "../../images/img-1.jpg";
 import img2 from "../../images/img-2.jpg";
@@ -213,7 +213,7 @@ export default function Home() {
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
-          <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+          {/* <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> */}
         </div>
       </div>
 
