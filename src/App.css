@@ -7,7 +7,7 @@
 
 
 .services,
-.products,
+.garbage-collection,
 .contact-us,
 .sign-up,
 .marketing,
@@ -39,7 +39,7 @@
   font-size: 100px;
 }
 
-.products {
+.garbage-collection{
   background-image: url('./images/img-3.jpg');
   background-position: center;
   background-size: fill;

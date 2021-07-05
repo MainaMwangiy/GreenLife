@@ -188,8 +188,26 @@ display: flex;
     border-radius: 20px;
     transition: all 0.2s ease-out;
 }
+/* #whorwe{
+    padding-top: 100px;
+} */
 
+#diststyl{
+    padding-top: 70px;
+}
+
+#ulstyl{
+    text-decoration: none;
+    list-style: none;
+    color:green;
+}
 @media(max-width: 960px) {
+    #diststyl{
+        padding-top: 20px;
+    }
+    #whorwe{
+        font-size: medium;
+    }
     #rmvimgsect{
         display: none;
         }
