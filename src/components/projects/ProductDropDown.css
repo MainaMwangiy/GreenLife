@@ -34,5 +34,8 @@
     .fa-caret-down {
       display: none;
     }
+    .prduct-menu{
+      flex-direction: column;
+    }
   }
   

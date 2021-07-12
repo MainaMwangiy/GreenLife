@@ -1,12 +1,24 @@
 import React from 'react';
+import img from "../assets/img-1.jpg";
+import './gallery.css'
 
 export default function Gallery() {
   return (
     <>
-      <h1 className='gallery'>Gallery</h1>
-      <p>
-        Consequat minim qui dolore aliqua tempor mollit reprehenderit exercitation in eiusmod aliquip labore dolore reprehenderit. Enim amet culpa et reprehenderit deserunt commodo deserunt elit commodo proident fugiat in minim Lorem. Nostrud consectetur commodo id ex sit velit ipsum laborum esse officia culpa in eiusmod irure. Incididunt ut et elit eu.
-      </p>
+      <div className='container'>
+        <div className='gall-coll'>
+          <img src={img} class="card-img-top" alt="..."></img>
+        </div>
+        <div className='gall-coll'>
+          <img src={img} class="card-img-top" alt="..."></img>
+        </div>
+        <div className='gall-coll'>
+          <img src={img} class="card-img-top" alt="..."></img>
+        </div>
+        <div className='gall-coll'>
+          <img src={img} class="card-img-top" alt="..."></img>
+        </div>
+      </div>
     </>
   );
 }

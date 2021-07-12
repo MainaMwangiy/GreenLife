@@ -1,10 +1,9 @@
 import React from 'react';
 import '../pages/Home.css'
-import img from "../../images/img-1.jpg";
-import img2 from "../../images/img-2.jpg";
-import img3 from "../../images/img-3.jpg";
-import cntimg from "../../images/counts-img.svg"
-// import '../../Assets/bootstrap-5.0.2-dist/css/bootstrap.css'
+import img from "../assets/img-1.jpg";
+import img2 from "../assets/img-2.jpg";
+import img3 from "../assets/img-3.jpg";
+import cntimg from "../assets/counts-img.svg"
 
 
 
@@ -23,7 +22,7 @@ export default function Home() {
               For a Green, Healthy, Wealthy, Community!
             </p>
             <p id="pstl">
-            To promote a healthy and wealthy community through ecofriendly practices
+              To promote a healthy and wealthy community through ecofriendly practices
             </p>
             <button className="btnno" href="/contact-us">Get in Touch</button>
 
@@ -43,49 +42,61 @@ export default function Home() {
               Core Values
               <hr />
 
-            <ul id="ulstyl">
-              <li>	Professionalism and work ethics in every service we offer</li>
-              <li>	Credibility, honesty and Integrity in our relationship and services we undertake.</li>
-              <li>	Confidentiality. We take our clients trust in us with utmost seriousness.</li>
-              <li>  Innovativeness and creativity in our services.</li>
-              <li>	Transparency and openness to our clients in our undertakings</li>
+              <ul id="ulstyl">
+                <li>	Professionalism and work ethics in every service we offer</li>
+                <li>	Credibility, honesty and Integrity in our relationship and services we undertake.</li>
+                <li>	Confidentiality. We take our clients trust in us with utmost seriousness.</li>
+                <li>  Innovativeness and creativity in our services.</li>
+                <li>	Transparency and openness to our clients in our undertakings</li>
 
-            </ul>
-            </h2 >                       
-              
+              </ul>
+            </h2 >
+
           </div>
         </div>
       </div>
 
       {/* Section */}
       <div class="row row-cols-1 row-cols-md-2 g-4 mb-4 sectna">
+          <div class="col">
+            <div id="whorwe" >
+              <h2 style={{ color: "orange" }} id="diststyl">
+                Who are we?
+                <hr />
+              </h2 >
 
-        <div class="col">
-          <div id="whorwe" >
-            <h2 style={{ color: "orange"}} id="diststyl">
-              Who are we?
-              <hr />
-            </h2 >
+              Green Life Africa (GLA) is a registered Youth Focused, Community Based Organization (CBO) with
+              a vision of a Green, Healthy, Wealthy Community! We implement programs on Active citizenship,
+              Food and Nutrition, Environmental Justice, Water and Sanitation (AFEW). Led by our Theory of
+              Change statement: Be the Innovator, Be the Voice, build partnership and Achieve results,
+              we have been able to create impact in Machakos County through reaching over 100,000
+              individuals yearly with its program.
+            </div>
+          </div>
+          <div class="col ">
+            <img src={cntimg} alt="Section " style={{ width: "100%", height: "400px" }} id="rmvimgsect"></img>
+          </div>
+      </div>
 
-            Green Life Africa (GLA) is a registered Youth Focused, Community Based Organization (CBO) with
-            a vision of a Green, Healthy, Wealthy Community! We implement programs on Active citizenship,
-            Food and Nutrition, Environmental Justice, Water and Sanitation (AFEW). Led by our Theory of
-            Change statement: Be the Innovator, Be the Voice, build partnership and Achieve results,
-            we have been able to create impact in Machakos County through reaching over 100,000
-            individuals yearly with its program.
+
+
+        <div class="row row-cols-1 row-cols-md-2 g-4 mb-4 sectna">
+          <div class="st2-style-info">
+            <div class="st2-style-date">
+              <span>Sunday</span>
+              <span>October</span>
+            </div>
+            <h1 class="st2-style-title">
+              Shark Sighting
+            </h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nobis aspernatur perferendis cumque
+              vitae, quos, necessitatibus hic aperiam voluptatibus officiis, quaerat consequatur iure perspiciatis
+              libero nam illo fugit. Quam, molestiae.
+            </p>
+            <a href="#" class="st2-style-cta">Submit</a>
           </div>
         </div>
-        <div class="col ">
-          <img src={cntimg} alt="Section " style={{ width: "100%", height: "400px" }} id="rmvimgsect"></img>
-        </div>
-      </div>
-      <hr />
-
-      {/* Which service do you need? */}
-      {/* <div style={{textAlign:"center"}}>
-          Services
-          <hr/>
-        </div> */}
 
       <div class="row row-cols-1 row-cols-md-6 ">
         <div class="col">

@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import ServiceDropDown from './ServiceDropDown';
-// import ProductsDropDown from './ProductsDropDown';
+import ServiceDropDown from './services/ServiceDropDown';
+import ProductsDropDown from './projects/ProductsDropDown';
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
+  const [pdropdown, setPDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -19,7 +20,6 @@ function Navbar() {
       setDropdown(true);
     }
   };
-
   const onMouseLeave = () => {
     if (window.innerWidth < 960) {
       setDropdown(false);
@@ -27,6 +27,24 @@ function Navbar() {
       setDropdown(false);
     }
   };
+
+  const onProductMouseEnter = ()=> {
+    if (window.innerWidth < 960) {
+      setPDropdown(false)
+    } else {
+      setPDropdown(true)
+    }
+  }
+
+  const onProductMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setPDropdown(false)
+    } else {
+      setPDropdown(false)
+    }
+  };
+
+
 
   return (
     <>
@@ -57,15 +75,19 @@ function Navbar() {
             </Link>
             {dropdown && <ServiceDropDown />}
           </li>
-          <li className='nav-item'>
+          <li
+            className='nav-item'
+            onMouseEnter={onProductMouseEnter}
+            onMouseLeave={onProductMouseLeave}
+          >
             <Link
               to='/products'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Products
+              Products <i className='fas fa-caret-down' />
             </Link>
-            {/* {productDropdown && <ProductsDropDown />} */}
+            {pdropdown && <ProductsDropDown />}
           </li>
           <li className='nav-item'>
             <Link

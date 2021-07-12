@@ -4,8 +4,9 @@ import Footer from './components/Footer';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Services from './components/pages/Services';
-import GarbageCollection from './components/pages/Garbage-Collection';
+import Services from './components/services/Services';
+import Products from './components/projects/Products';
+import GarbageCollection from './components/services/Garbage-Collection';
 import ContactUs from './components/pages/ContactUs';
 import SignUp from './components/pages/SignUp';
 import Marketing from './components/pages/Marketing';
@@ -19,6 +20,7 @@ function App() {
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/services' component={Services} />
+        <Route path='/products' component={Products} />
         <Route path='/garbage-collection' component={GarbageCollection} />
         <Route path='/contact-us' component={ContactUs} />
         <Route path='/sign-up' component={SignUp} />
