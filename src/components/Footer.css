@@ -2,8 +2,8 @@
     color: #fff;
     background-color: green;
     text-align: center;
-    height: 100px;
-    width: "100%";
+    height: auto;
+    width: 100%;
     margin-top: 0;
 }
 #text-xs-center{
@@ -14,7 +14,7 @@
         color: #fff;
         background-color: green;
         text-align: center;
-        height: 50px;
-        width: "100%";
+        height: auto;
+        width: 100%
     }
 }

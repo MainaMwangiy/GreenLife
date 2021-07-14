@@ -1,8 +1,8 @@
 import React from 'react';
 import '../pages/Home.css'
-import img from "../assets/img-1.jpg";
-import img2 from "../assets/img-2.jpg";
-import img3 from "../assets/img-3.jpg";
+import img from "../assets/IMG_9400.jpg";
+import img2 from "../assets/DSC_8589.jpg";
+import img3 from "../assets/IMG_9377.jpg";
 import cntimg from "../assets/counts-img.svg"
 
 
@@ -32,7 +32,7 @@ export default function Home() {
 
 
       {/* Section */}
-      <div class="row row-cols-1 row-cols-md-2 g-4 mb-4 sectna">
+      <div class="row row-cols-1 row-cols-md-2 g-4 mb-4 sectna box-sahdw-s">
         <div class="col ">
           <img src={cntimg} alt="Section " style={{ width: "100%", height: "400px" }} id="rmvimgsect"></img>
         </div>
@@ -57,7 +57,7 @@ export default function Home() {
       </div>
 
       {/* Section */}
-      <div class="row row-cols-1 row-cols-md-2 g-4 mb-4 sectna">
+      <div class="row row-cols-1 row-cols-md-2 g-4 mb-4 sectna box-sahdw-st">
           <div class="col">
             <div id="whorwe" >
               <h2 style={{ color: "orange" }} id="diststyl">
@@ -80,7 +80,7 @@ export default function Home() {
 
 
 
-        <div class="row row-cols-1 row-cols-md-2 g-4 mb-4 sectna">
+        <div class="row row-cols-1 row-cols-md-2 g-4 mb-4 sectna box-sahdw-st">
           <div class="st2-style-info">
             <div class="st2-style-date">
               <span>Sunday</span>
@@ -183,7 +183,7 @@ export default function Home() {
         </div>
         <div class="col">
           <div class="card">
-            <img src={img} class="card-img-top" alt="..."></img>
+            <img src={img3} class="card-img-top" alt="..."></img>
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
@@ -192,7 +192,7 @@ export default function Home() {
         </div>
         <div class="col">
           <div class="card">
-            <img src={img} class="card-img-top" alt="..."></img>
+            <img src={img2} class="card-img-top" alt="..."></img>
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -200,50 +200,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* Corousel */}
-      <div className="home">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src={img} class="d-block w-100" alt="..." style={{ width: "100%", height: "600px" }}></img>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src={img2} class="d-block w-100" alt="..." style={{ width: "100%", height: "600px" }}></img>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src={img3} class="d-block w-100" alt="..." style={{ width: "100%", height: "600px" }}></img>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          {/* <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> */}
-        </div>
-      </div>
-
 
     </>
   );
