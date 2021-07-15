@@ -5,12 +5,9 @@ import img2 from "../assets/DSC_8589.jpg";
 import img3 from "../assets/IMG_9377.jpg";
 import cntimg from "../assets/counts-img.svg"
 
-
-
 export default function Home() {
   return (
     <>
-      {/* Main Content */}
 
       <main className="container center" id="page-home" >
         <div className="content">
@@ -24,14 +21,11 @@ export default function Home() {
             <p id="pstl">
               To promote a healthy and wealthy community through ecofriendly practices
             </p>
-            <button className="btnno" href="/contact-us">Get in Touch</button>
+            <button className="btnno" to="/contact-us">Get in Touch</button>
 
           </main>
         </div>
       </main>
-
-
-      {/* Section */}
       <div class="row row-cols-1 row-cols-md-2 g-4 mb-4 sectna box-sahdw-s">
         <div class="col ">
           <img src={cntimg} alt="Section " style={{ width: "100%", height: "400px" }} id="rmvimgsect"></img>
@@ -58,45 +52,45 @@ export default function Home() {
 
       {/* Section */}
       <div class="row row-cols-1 row-cols-md-2 g-4 mb-4 sectna box-sahdw-st">
-          <div class="col">
-            <div id="whorwe" >
-              <h2 style={{ color: "orange" }} id="diststyl">
-                Who are we?
-                <hr />
-              </h2 >
+        <div class="col">
+          <div id="whorwe" >
+            <h2 style={{ color: "orange" }} id="diststyl">
+              Who are we?
+              <hr />
+            </h2 >
 
-              Green Life Africa (GLA) is a registered Youth Focused, Community Based Organization (CBO) with
-              a vision of a Green, Healthy, Wealthy Community! We implement programs on Active citizenship,
-              Food and Nutrition, Environmental Justice, Water and Sanitation (AFEW). Led by our Theory of
-              Change statement: Be the Innovator, Be the Voice, build partnership and Achieve results,
-              we have been able to create impact in Machakos County through reaching over 100,000
-              individuals yearly with its program.
-            </div>
+            Green Life Africa (GLA) is a registered Youth Focused, Community Based Organization (CBO) with
+            a vision of a Green, Healthy, Wealthy Community! We implement programs on Active citizenship,
+            Food and Nutrition, Environmental Justice, Water and Sanitation (AFEW). Led by our Theory of
+            Change statement: Be the Innovator, Be the Voice, build partnership and Achieve results,
+            we have been able to create impact in Machakos County through reaching over 100,000
+            individuals yearly with its program.
           </div>
-          <div class="col ">
-            <img src={cntimg} alt="Section " style={{ width: "100%", height: "400px" }} id="rmvimgsect"></img>
-          </div>
+        </div>
+        <div class="col ">
+          <img src={cntimg} alt="Section " style={{ width: "100%", height: "400px" }} id="rmvimgsect"></img>
+        </div>
       </div>
 
 
 
-        <div class="row row-cols-1 row-cols-md-2 g-4 mb-4 sectna box-sahdw-st">
-          <div class="st2-style-info">
-            <div class="st2-style-date">
-              <span>Sunday</span>
-              <span>October</span>
-            </div>
-            <h1 class="st2-style-title">
-              Shark Sighting
-            </h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nobis aspernatur perferendis cumque
-              vitae, quos, necessitatibus hic aperiam voluptatibus officiis, quaerat consequatur iure perspiciatis
-              libero nam illo fugit. Quam, molestiae.
-            </p>
-            <a href="#" class="st2-style-cta">Submit</a>
+      <div class="row row-cols-1 row-cols-md-2 g-4 mb-4 sectna box-sahdw-st">
+        <div class="st2-style-info">
+          <div class="st2-style-date">
+            <span>Sunday</span>
+            <span>October</span>
           </div>
+          <h1 class="st2-style-title">
+            Shark Sighting
+          </h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nobis aspernatur perferendis cumque
+            vitae, quos, necessitatibus hic aperiam voluptatibus officiis, quaerat consequatur iure perspiciatis
+            libero nam illo fugit. Quam, molestiae.
+          </p>
+          <a href="#" class="st2-style-cta">Submit</a>
         </div>
+      </div>
 
       <div class="row row-cols-1 row-cols-md-6 ">
         <div class="col">

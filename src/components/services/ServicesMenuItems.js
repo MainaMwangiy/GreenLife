@@ -15,8 +15,8 @@ export const MenuItems = [
     cName: 'dropdown-link'
   },
   {
-    title: 'Marketing',
-    path: '/marketing',
+    title: 'Fumigation and Pest control ',
+    path: '/fumigation',
     cName: 'dropdown-link'
   }
 ];

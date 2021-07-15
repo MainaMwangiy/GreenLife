@@ -1,11 +1,32 @@
+/* .gall-coll {
+    background-color: rgba(209, 207, 204, 0.719);
+    box-shadow: 0 1.4rem 8rem rgba(209, 207, 204, 0.719);
+    display: flex;
+    align-items: center;
+    border-radius: .8rem;
+    margin: 10px 10px 10px 10px;
+}
 
-img {
+.card-img-top {
     width: 100%;
+    height: 100vh;
+}
+
+.rad {
+    border-radius: 0.5rem;
+} */
+.gb-coll{
+    margin-top: 20px;
+    padding: 10px;
 }
 
 
-.blog-post {
+
+
+
+.st1-style {
     width: 100%;
+    margin-left: 30px;
     max-width: 98rem;
     padding: 5rem;
     background-color: #fff;
@@ -15,7 +36,8 @@ img {
     border-radius: .8rem;
 }
 
-.blog-post-img {
+.st1-style-img {
+    margin-top: 30px;
     min-width: 35rem;
     max-width: 35rem;
     height: 30rem;
@@ -23,7 +45,7 @@ img {
     position: relative;
 }
 
-.blog-post-img img {
+.st1-style-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -31,7 +53,7 @@ img {
     border-radius: .8rem;
 }
 
-.blog-post-img::before {
+.st1-style-img::before {
     content: '';
     width: 100%;
     height: 100%;
@@ -43,7 +65,7 @@ img {
     border-radius: .8rem;
 }
 
-.blog-post-date span {
+.st1-style-date span {
     display: block;
     color: rgba(0, 0, 0, .5);
     font-size: 1.6rem;
@@ -51,20 +73,20 @@ img {
     margin: .5rem 0;
 }
 
-.blog-post-title {
+.st1-style-title {
     font-size: 2.5rem;
     margin: 1.5rem 0 2rem;
     text-transform: uppercase;
     color: #4facfe;
 }
 
-.blog-post-text {
+.st1-style-text {
     margin-bottom: 3rem;
     font-size: 1.4rem;
     color: rgba(0, 0, 0, .7);
 }
 
-.blog-post-cta {
+.st1-style-cta {
     display: inline-block;
     padding: 1.5rem 3rem;
     letter-spacing: 1px;
@@ -77,32 +99,40 @@ img {
 }
 
 @media screen and (max-width: 1068px) {
-    .blog-post {
+    .st1-style {
         max-width: 80rem;
+        margin-left: 0;
+        margin-top: 20px;
     }
 
-    .blog-post-img {
-        min-width: 30rem;
-        max-width: 30rem;
+    .st1-style-img {
+        min-width: 10rem;
+        max-width: 10rem;
 
     }
 
 }
 
 @media screen and (max-width: 868px) {
-    .blog-post {
+    .st1-style {
         max-width: 70rem;
+        margin-left: 0;
+        margin-top: 20px;
     }
 }
 @media screen and (max-width: 768px) {
-    .blog-post {
+    .st1-style {
         padding: 2.5rem;
         flex-direction: column;
+        margin-left: 0;
+        margin-top: 20px;
     }
 
-    .blog-post-img {
-        min-width: 30rem;
-        max-width: 30rem;
+    .st1-style-img {
+        /* padding: 2.5rem;
+        padding-top: 9.5rem; */
+        min-width: 20rem;
+        max-width: 20rem;
         transform: translate(0, -8rem);
     }
 

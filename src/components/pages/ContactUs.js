@@ -1,7 +1,5 @@
 import React from 'react';
 import './contact-us.css'
-import 'react-bootstrap'
-import "react-bootstrap"
 
 export default function ContactUs() {
   return <>

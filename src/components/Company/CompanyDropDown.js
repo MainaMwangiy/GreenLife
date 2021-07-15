@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { ProductMenuItems } from './ProductMenuItems';
-import './ProductDropDown.css';
+import { CompanyMenuItems } from './CompanyMenuItems';
+import './CompanyDropDown.css';
 import { Link } from 'react-router-dom';
 
-function ProductsDropdown() {
+function CompanyDropdown() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -12,9 +12,9 @@ function ProductsDropdown() {
     <>
       <ul
         onClick={handleClick}
-        className={click ? 'prduct-menu clicked' : 'prduct-menu'}
+        className={click ? 'company-menu clicked' : 'company-menu'}
       >
-        {ProductMenuItems.map((item, index) => {
+        {CompanyMenuItems.map((item, index) => {
           return (
             <li key={index}>
               <Link
@@ -32,4 +32,4 @@ function ProductsDropdown() {
   );
 }
 
-export default ProductsDropdown;
+export default CompanyDropdown;

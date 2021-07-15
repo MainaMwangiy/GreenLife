@@ -3,12 +3,14 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import ServiceDropDown from './services/ServiceDropDown';
-import ProductsDropDown from './projects/ProductsDropDown';
+import ProjectDropDown from './projects/ProjectDropDown';
+import CompanyDropDown from './Company/CompanyDropDown';
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [pdropdown, setPDropdown] = useState(false);
+  const [codropdown, setCoDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -28,7 +30,7 @@ function Navbar() {
     }
   };
 
-  const onProductMouseEnter = ()=> {
+  const onProductMouseEnter = () => {
     if (window.innerWidth < 960) {
       setPDropdown(false)
     } else {
@@ -41,6 +43,21 @@ function Navbar() {
       setPDropdown(false)
     } else {
       setPDropdown(false)
+    }
+  };
+  const onCompanyMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setCoDropdown(false)
+    } else {
+      setCoDropdown(true)
+    }
+  }
+
+  const onCompanyMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setCoDropdown(false)
+    } else {
+      setCoDropdown(false)
     }
   };
 
@@ -56,11 +73,20 @@ function Navbar() {
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li className='nav-item'>
-            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-              Home
+          <li className='nav-item'
+            onMouseEnter={onCompanyMouseEnter}
+            onMouseLeave={onCompanyMouseLeave}
+          >
+            <Link 
+            // to='/' 
+            className='nav-links' 
+            onClick={closeMobileMenu}
+            >
+              Home <i className='fas fa-caret-down' />
             </Link>
+            {codropdown && <CompanyDropDown />}
           </li>
+
           <li
             className='nav-item'
             onMouseEnter={onMouseEnter}
@@ -81,13 +107,13 @@ function Navbar() {
             onMouseLeave={onProductMouseLeave}
           >
             <Link
-              to='/products'
+              to='/projects'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Products <i className='fas fa-caret-down' />
+              Projects <i className='fas fa-caret-down' />
             </Link>
-            {pdropdown && <ProductsDropDown />}
+            {pdropdown && <ProjectDropDown />}
           </li>
           <li className='nav-item'>
             <Link
@@ -116,9 +142,9 @@ function Navbar() {
               Sign Up
             </Link>
           </li>
-          
+
         </ul>
-        <Button/>
+        <Button />
       </nav>
     </>
   );

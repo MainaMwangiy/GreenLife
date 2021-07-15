@@ -56,10 +56,10 @@
     align-items: flex-start;
 }
 
-/* #page-home .content header {
+#page-home .content header {
     margin: 48px 0 0;
-    background: url('../Assets/logo512.jpeg') no-repeat 40px;
-  } */
+    background: url('../assets/home-background.svg') no-repeat 40px;
+  }
 
 #page-home .content main {
     flex: 1;

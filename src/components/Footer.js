@@ -4,7 +4,7 @@ import "./Footer.css"
 function Footer() {
   return (
     <>
-      <nav className='footer'>
+      {/* <nav className='footer'>
         <div class="row row-cols-1 row-cols-md-4 ">
           <div class="col">
             <p> Contact Us</p>
@@ -41,7 +41,7 @@ function Footer() {
 
           </div>
         </div>
-      </nav>
+      </nav> */}
       <div className="footer-bottom">
         <p className="text-xs-center" id="ftrst">
           &copy; Green Life Africa 2021- All Rights Reserved
