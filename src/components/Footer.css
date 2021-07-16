@@ -9,6 +9,19 @@
 #text-xs-center{
     margin-top: 20px;
 }
+ #list-unstyled{
+    display: block;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+#list-unstyled a{
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
 @media(max-width: 960px) {
     .footer{
         color: #fff;

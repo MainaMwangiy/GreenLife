@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './App.css';
-import Home from './components/pages/Home';
+// import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Services from './components/services/Services';
 import Project from './components/projects/Project';
@@ -18,13 +18,14 @@ import Cleaning from './components/services/Cleaning';
 import Fumigation from './components/services/Fumigation';
 import EnvironmentalJustice from './components/projects/environmental-justice';
 import FoodSecurityAndNutrition from './components/projects/food-security-and-nutrition';
+import Landing from './components/pages/Landing';
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Switch>
-        <Route path='/' exact component={Home} />
+        <Route path='/' exact component={Landing} />
         <Route path='/about' component={About} />
         <Route path='/services' component={Services} />
         <Route path='/projects' component={Project} />
