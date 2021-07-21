@@ -93,7 +93,7 @@ function Navbar() {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to='/services'
+              // to='/services'
               className='nav-links'
               onClick={closeMobileMenu}
             >
@@ -107,7 +107,7 @@ function Navbar() {
             onMouseLeave={onProductMouseLeave}
           >
             <Link
-              to='/projects'
+              // to='/projects'
               className='nav-links'
               onClick={closeMobileMenu}
             >

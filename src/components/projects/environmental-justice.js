@@ -1,6 +1,6 @@
 import React from 'react';
 import "./project.css"
-import img from '../assets/homepage.JPG'
+import img from '../assets/DSC_8589.jpg'
 
 export default function EnvironmentalJustice() {
     return <>
@@ -8,7 +8,7 @@ export default function EnvironmentalJustice() {
             <div className='gb-coll'>
                 <div class="st1-style">
                     <div class="st1-style-img">
-                        <img src={img} class="card-img-top" alt="..."></img>
+                        <img src="https://i.postimg.cc/05GfKfKz/IMG-9400.jpg" class="card-img-top" alt="..."></img>
                     </div>
                     <div class="st1-style-info">
 
@@ -26,7 +26,7 @@ export default function EnvironmentalJustice() {
             <div className='gb-coll'>
                 <div class="st2-style">
                     <div class="st2-style-img">
-                        <img src={img} class="card-img-top" alt="..."></img>
+                        <img src="https://i.postimg.cc/2yThc0nT/homepage.jpg" class="card-img-top" alt="..."></img>
                     </div>
                     <div class="st2-style-info">
 
@@ -47,7 +47,7 @@ export default function EnvironmentalJustice() {
             <div className='gb-coll'>
                 <div class="st3-style">
                     <div class="st3-style-img">
-                        <img src={img} class="card-img-top" alt="..."></img>
+                        <img src="https://i.postimg.cc/gJWhGCDN/DSC-8589.jpg" class="card-img-top" alt="..."></img>
                     </div>
                     <div class="st3-style-info">
 

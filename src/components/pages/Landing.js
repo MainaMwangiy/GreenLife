@@ -1,57 +1,173 @@
 import React from 'react';
+import './ImageSlide.css';
+import ImageSlider from './ImageSlider';
+import { ImageData } from './ImageData';
 import '../pages/Landing.css'
 import cntimg from "../assets/counts-img.svg"
 import img from "../assets/IMG_9400.jpg";
-import counts from "../assets/school.jpg"
+// import counts from "../assets/school.jpg"
 import About from '../Company/About';
+import CountUp from 'react-countup';
+import CoreValues from '../Company/core-values';
 
 export default function Landing() {
     return (
         <>
-            <main className="container " id="page-home" >
-                <div className="content">
-                    <main>
-                        <h1>
-                            Get in touch for garbage services.
-                        </h1>
-                        <p>
-                            For a Green, Healthy, Wealthy, Community!
-                        </p>
-                        <p id="pstl">
-                            To promote a healthy and wealthy community through ecofriendly practices
-                        </p>
-                        <button className="btnno" to="/contact-us">Get in Touch</button>
+            <ImageSlider slides={ImageData} />
+            <div style={{ textAlign: "center", color: "orange",backgroundColor:"#fff" }}>
+                <h1>
+                    About
+                </h1>
+            </div>
+            <About />
+            <CoreValues/>
+            <div style={{ textAlign: "center", color: "orange" ,  backgroundColor:"#fff"}}>
+                <h1>
+                    Impact
+                </h1>
+            </div>
+            <section id="counts" class="counts">
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0"
+                            data-aos="fade-left"
+                            data-aos-delay="300"
+                        >
+                            <div class="content d-flex flex-column justify-content-center">
+                                <div class="row">
+                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                        <div class="count-box">
+                                            <i class="fa fa-building"></i>
+                                            <span data-toggle="counter-up">
+                                                <CountUp start={0} end={5} delay={0}>
+                                                    {({ countUpRef }) => (
+                                                        <div>
+                                                            <span ref={countUpRef} />
+                                                        </div>
+                                                    )}
+                                                </CountUp>
+                                            </span>
+                                            <p>
+                                                <strong>mega cleanups</strong>
+                                                Campaigns conducted in Machakos and its environment
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                        <div class="count-box">
+                                            <i class="fa fa-trash"></i>
+                                            <span data-toggle="counter-up"> <CountUp start={0} end={50} delay={0}>
+                                                {({ countUpRef }) => (
+                                                    <div>
+                                                        <span ref={countUpRef} />
+                                                    </div>
+                                                )}
+                                            </CountUp></span>
+                                            <p>
+                                                <strong>tons of waste </strong>collected weekly: every week we collect waste from hundreds of households and commercial and industrial clients across Machakos town.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                        <div class="count-box">
+                                            <i class="fa fa-users"></i>
+                                            <span data-toggle="counter-up">
+                                                <CountUp start={0} end={20} delay={0}>
+                                                    {({ countUpRef }) => (
+                                                        <div>
+                                                            <span ref={countUpRef} />
+                                                        </div>
+                                                    )}
+                                                </CountUp>
+                                            </span>
+                                            <p>
+                                                <strong>youths</strong> Empowered through garbage collection value chain
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                        <div class="count-box">
+                                            <i class="fa fa-user-secret"></i>
+                                            <span data-toggle="counter-up">
+                                                <CountUp start={0} end={5000} delay={0}>
+                                                    {({ countUpRef }) => (
+                                                        <div>
+                                                            <span ref={countUpRef} />
+                                                        </div>
+                                                    )}
+                                                </CountUp>
+                                            </span>
+                                            <p>
+                                                <strong>Farmers</strong> empowered to make organic manure from household waste.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                        <div class="count-box">
+                                            <i class="fa fa-tree"></i>
+                                            <span data-toggle="counter-up">
+                                                {/* 6,400+ */}
+                                                <CountUp start={0} end={6400} delay={0}>
+                                                    {({ countUpRef }) => (
+                                                        <div>
+                                                            <span ref={countUpRef} />
+                                                        </div>
+                                                    )}
+                                                </CountUp>
+                                            </span>
+                                            <p>
+                                                <strong>Trees </strong> planted in various public spaces.
+                                            </p>
+                                        </div>
+                                    </div>
 
-                    </main>
-                </div>
-            </main>
-            <div className="cnt-st">
-                <div class="blog-post">
-                    <div class="row row-cols-1 row-cols-md-2 g-4 mb-4 sectna box-sahdw-s">
-                        <div class="col ">
-                            <img src={cntimg} alt="Section " style={{ width: "100%", height: "400px" }} id="rmvimgsect"></img>
-                        </div>
-                        <div class="col">
-                            <div id="whorwe" >
-                                <h2 style={{ color: "orange" }}>
-                                    Core Values
+                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                        <div class="count-box">
+                                            <i class="fa fa-list-ol" aria-hidden="true"></i>
+                                            <span data-toggle="counter-up">
+                                                {/* 1000+  */}
+                                                <CountUp start={0} end={1000} delay={0}>
+                                                    {({ countUpRef }) => (
+                                                        <div>
+                                                            <span ref={countUpRef} />
+                                                        </div>
+                                                    )}
+                                                </CountUp>
+                                            </span>
+                                            <p>
+                                                <strong>needy </strong> individuals have benefited from our give back initiative with clothes and shoes.
+                                            </p>
+                                        </div>
+                                    </div>
 
-                                </h2 >
-
-                                <ul id="ulstyl">
-                                    <li>	Professionalism and work ethics in every service we offer</li>
-                                    <li>	Credibility, honesty and Integrity in our relationship and services we undertake.</li>
-                                    <li>	Confidentiality. We take our clients trust in us with utmost seriousness.</li>
-                                    <li>  Innovativeness and creativity in our services.</li>
-                                    <li>	Transparency and openness to our clients in our undertakings</li>
-
-                                </ul>
+                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                        <div class="count-box">
+                                            <i class="fa fa-award"></i>
+                                            <span data-toggle="counter-up">
+                                                {/* 30,000  */}
+                                                <CountUp start={0} end={30000} delay={0}>
+                                                    {({ countUpRef }) => (
+                                                        <div>
+                                                            <span ref={countUpRef} />
+                                                        </div>
+                                                    )}
+                                                </CountUp>
+                                            </span>
+                                            <p>
+                                                <strong>Residents</strong> residents of Machakos reached with behavior change communication messages on solid waste management.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div style={{ textAlign: "center", color: "orange" }}>
+            </section>
+
+
+            <div style={{ textAlign: "center", color: "orange",backgroundColor:"#fff" }}>
                 <h1>
                     Partners
                 </h1>
@@ -77,99 +193,6 @@ export default function Landing() {
                     </div>
                 </div>
             </div>
-            <section id="counts" class="counts">
-                <div class="container">
-                    <div class="row">
-
-                        <div
-                            class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start"
-                            data-aos="fade-right"
-                            data-aos-delay="150"
-                        >
-                            <img src={counts} class="img-fluid" alt="Section " style={{ width: "450px", height: "100%", borderRadius: "0.5rem", boxShadow: " 0 1.4rem 8rem rgba(0, 0, 0, .2)" }} ></img>
-                        </div>
-
-
-                        <div
-                            class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0"
-                            data-aos="fade-left"
-                            data-aos-delay="300"
-                        >
-                            <div class="content d-flex flex-column justify-content-center">
-                                <div class="row">
-                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                        <div class="count-box">
-                                            <i class="fa fa-building"></i>
-                                            <span data-toggle="counter-up">5</span>
-                                            <p>
-                                                <strong>mega cleanups</strong>
-                                                Campaigns conducted in Machakos and its environment
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                        <div class="count-box">
-                                            <i class="fa fa-code"></i>
-                                            <span data-toggle="counter-up">50</span>
-                                            <p>
-                                                <strong>tons of waste </strong>collected weekly: every week we collect waste from hundreds of households and commercial and industrial clients across Machakos town.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                        <div class="count-box">
-                                            <i class="fa fa-user"></i>
-                                            <span data-toggle="counter-up">20</span>
-                                            <p>
-                                                <strong>youths</strong> Empowered through garbage collection value chain
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                        <div class="count-box">
-                                            <i class="fa fa-user"></i>
-                                            <span data-toggle="counter-up">500+</span>
-                                            <p>
-                                                <strong>Farmers</strong> empowered to make organic manure from household waste.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                        <div class="count-box">
-                                            <i class="fa fa-fire"></i>
-                                            <span data-toggle="counter-up">6,400+ </span>
-                                            <p>
-                                                <strong>Trees </strong> planted in various public spaces.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                        <div class="count-box">
-                                            <i class="fa fa-clock"></i>
-                                            <span data-toggle="counter-up">1000+ </span>
-                                            <p>
-                                                <strong>needy </strong> individuals have benefited from our give back initiative with clothes and shoes.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                        <div class="count-box">
-                                            <i class="fa fa-award"></i>
-                                            <span data-toggle="counter-up">30,000 </span>
-                                            <p>
-                                                <strong>Residents</strong> residents of Machakos reached with behavior change communication messages on solid waste management.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <About />
 
             <div class="row row-cols-1 row-cols-md-4 " >
                 <div class="col" >
@@ -181,7 +204,7 @@ export default function Landing() {
                                 the growth in population, which is significantly high in the
                                 urban areas. With a 4.3% growth in urbanization annually
                             </p>
-                            <button className="btn btn-primary"> Read More...</button>
+                            <a className="btn btn-primary" href = "/garbage-collection"> Read More...</a>
                         </div>
 
                     </div>
@@ -198,7 +221,7 @@ export default function Landing() {
                                 disposal in commercial buildings, schools and
                                 institutions...
                             </p>
-                            <button className="btn btn-primary"> Read More...</button>
+                            <a className="btn btn-primary" href = "/sanitary-bin-collection"> Read More...</a>
                         </div>
 
                     </div>
@@ -209,7 +232,7 @@ export default function Landing() {
                             <img src={img} class="card-img-top" alt="..." id="imgst"></img>
                             <h5 class="card-title">Cleaning services</h5>
                             <p class="card-text"> Project coming up in future</p>
-                            <button className="btn btn-primary"> Read More...</button>
+                            <a className="btn btn-primary" href = "/cleaning"> Read More...</a>
                         </div>
 
                     </div>
@@ -220,7 +243,7 @@ export default function Landing() {
                             <img src={img} class="card-img-top" alt="..." id="imgst"></img>
                             <h5 class="card-title">Fumigation and Pest control</h5>
                             <p class="card-text"> Project coming up in future</p>
-                            <button className="btn btn-primary"> Read More...</button>
+                            <a className="btn btn-primary" href = "/fumigation"> Read More...</a>
                         </div>
 
                     </div>

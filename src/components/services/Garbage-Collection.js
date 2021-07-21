@@ -1,6 +1,6 @@
 import React from 'react';
 import "./services.css";
-import img from '../assets/homepage.JPG'
+import img from '../assets/DSC_8589.jpg'
 
 export default function GarbageCollection() {
   return <>
@@ -8,7 +8,7 @@ export default function GarbageCollection() {
       <div className='gb-coll'>
         <div class="st1-style">
           <div class="st1-style-img">
-            <img src={img} class="card-img-top" alt="..."></img>
+            <img src="https://i.postimg.cc/yNN5vG9p/IMG-9377.jpg" class="card-img-top" alt="..."></img>
           </div>
           <div class="st1-style-info">
             <div class="st1-style-date">

@@ -1,6 +1,6 @@
 import React from 'react';
 import "./services.css";
-import img from '../assets/homepage.JPG'
+import img from '../assets/DSC_8589.jpg'
 
 export default function SanitaryBinCollection() {
     return <>
@@ -8,7 +8,7 @@ export default function SanitaryBinCollection() {
             <div className='gb-coll'>
                 <div class="st1-style">
                     <div class="st1-style-img">
-                        <img src={img} class="card-img-top" alt="..."></img>
+                        <img src="https://i.postimg.cc/rFPtD0jd/school.jpg" class="card-img-top" alt="..."></img>
                     </div>
                     <div class="st1-style-info">
                         <div class="st1-style-date">
