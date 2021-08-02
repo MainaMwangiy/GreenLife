@@ -1,7 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './contact-us.css'
 
-export default function ContactUs() {
+const ContactUs = () => {
+  const [status, setStatus] = useState("Submit");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+    const { fullname,subject, email, message } = e.target.elements;
+    let details = {
+      fullname: fullname.value,
+      subject: subject.value,
+      email: email.value,
+      message: message.value,
+    };
+    let response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
+  };
   return <>
     <div className="gall-coll">
       <div class="contact-st">
@@ -43,20 +65,20 @@ export default function ContactUs() {
               <div class="contact-st-date">
                 <span>Send Us an Email</span>
               </div>
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div class="mb-3">
-                  <input type="text" class="form-control" id="exampleInputName" placeholder="Your Full Name." aria-describedby="nameHelp"></input>
+                  <input type="text" class="form-control" id="exampleInputName" placeholder="Your Full Name." aria-describedby="nameHelp" id="fullname" required ></input>
                 </div>
                 <div class="mb-3">
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Email." aria-describedby="emailHelp"></input>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Email." aria-describedby="emailHelp" id="email" required></input>
                 </div>
                 <div class="mb-3">
-                  <input type="text" class="form-control" id="exampleInputsubject" placeholder="Subject." aria-describedby="subjectHelp"></input>
+                  <input type="text" class="form-control" id="exampleInputsubject" placeholder="Subject." aria-describedby="subjectHelp" id="subject" required ></input>
                 </div>
                 <div class="mb-3">
-                  <textarea class="form-control" aria-label="With textarea" placeholder="Message."></textarea>
+                  <textarea class="form-control" aria-label="With textarea" placeholder="Message." id="message" required ></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">{status}</button>
               </form>
             </div>
           </div>
@@ -66,3 +88,4 @@ export default function ContactUs() {
   </>
     ;
 }
+export default ContactUs

@@ -1,8 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./services.css";
 import img from '../assets/school.jpg'
 
 export default function SanitaryBinCollection() {
+    const [status, setStatus] = useState("Submit");
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setStatus("Sending...");
+        const { exampleInputName,email } = e.target.elements;
+        let details = {
+            exampleInputName: exampleInputName.value,
+            email: email.value
+        };
+        let response = await fetch("http://localhost:5000/service", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8",
+            },
+            body: JSON.stringify(details),
+        });
+        setStatus("Submit");
+        let result = await response.json();
+        alert(result.status);
+    };
     return <>
         <div className='container'>
             <div className='gb-coll'>
@@ -27,10 +47,15 @@ export default function SanitaryBinCollection() {
                             maintaining high level of sanitation.
                             Get a free quote by booking our service.
                         </p>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" id="exampleInputName" style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>Submit</button>
+                        <form onSubmit={handleSubmit} style={{ border: "none" }}>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="exampleInputName" required style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="email" required style={{ borderRadius: "1rem" }} placeholder="Email Adress" aria-describedby="nameHelp"></input>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>{status}</button>
+                        </form>
                     </div>
                 </div>
             </div>

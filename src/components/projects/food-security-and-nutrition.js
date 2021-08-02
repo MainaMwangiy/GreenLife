@@ -1,8 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./project.css"
 import img from '../assets/school.jpg'
 
 export default function FoodSecurityAndNutrition() {
+    const [status, setStatus] = useState("Submit");
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setStatus("Sending...");
+        const { exampleInputName, email } = e.target.elements;
+        let details = {
+            exampleInputName: exampleInputName.value,
+            email: email.value
+        };
+        let response = await fetch("http://localhost:5000/service", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8",
+            },
+            body: JSON.stringify(details),
+        });
+        setStatus("Submit");
+        let result = await response.json();
+        alert(result.status);
+    };
     return <>
         <div className='container'>
             <div className='gb-coll'>
@@ -22,10 +42,15 @@ export default function FoodSecurityAndNutrition() {
                             The fruit tree sovereignty for school’s project is based on seed sovereignty for the community. The aim is to have a conserved biodiversity of fruit trees that thrive well in the region for future food security and nutrition. The genetically modified seed science presents itself in an enormous scope to our farmers being a threat to the indigenous fruit trees. It is thus wise for a collective action to have a common seed bank for our fruits.
                             The idea is to have sizeable fruit tree nursery in public schools initiated by the environment club students and have at least two indigenous fruit trees planted in the school compound. The planted trees are to grow in their indigenous state as they shall serve as the seed bank for the future generation.
                         </p>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" id="exampleInputName" style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>Submit</button>
+                        <form onSubmit={handleSubmit} style={{ border: "none" }}>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="exampleInputName" required style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="email" required style={{ borderRadius: "1rem" }} placeholder="Email Adress" aria-describedby="nameHelp"></input>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>{status}</button>
+                        </form>
                     </div>
                 </div>
             </div>
