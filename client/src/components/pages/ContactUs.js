@@ -6,7 +6,7 @@ const ContactUs = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
-    const { fullname,subject, email, message } = e.target.elements;
+    const { fullname, subject, email, message } = e.target.elements;
     let details = {
       fullname: fullname.value,
       subject: subject.value,
@@ -24,7 +24,7 @@ const ContactUs = () => {
     let result = await response.json();
     alert(result.status);
   };
-  return <>
+  return (
     <div className="gall-coll">
       <div class="contact-st">
         <div class="contact-st-info">
@@ -70,7 +70,7 @@ const ContactUs = () => {
                   <input type="text" class="form-control" id="fullname" placeholder="Your Full Name." aria-describedby="nameHelp" required ></input>
                 </div>
                 <div class="mb-3">
-                  <input type="email" class="form-control" id="email" placeholder="Your Email." aria-describedby="emailHelp"  required></input>
+                  <input type="email" class="form-control" id="email" placeholder="Your Email." aria-describedby="emailHelp" required></input>
                 </div>
                 <div class="mb-3">
                   <input type="text" class="form-control" id="subject" placeholder="Subject." aria-describedby="subjectHelp" required ></input>
@@ -85,7 +85,6 @@ const ContactUs = () => {
         </div>
       </div>
     </div>
-  </>
-    ;
+  );
 }
 export default ContactUs

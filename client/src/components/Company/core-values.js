@@ -4,7 +4,7 @@ import './about.css'
 // import img from '../assets/logo.svg'
 
 export default function CoreValues() {
-    return <>
+    return (
         <div className="cnt-st">
             <div class="blog-post">
                 <div class="blog-post-info">
@@ -26,5 +26,5 @@ export default function CoreValues() {
 
             </div>
         </div>
-    </>;
+    );
 }

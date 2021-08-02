@@ -17,31 +17,29 @@ const ImageSlider = ({ slides }) => {
     return null;
   }
   return (
-    <>
-      <section className='slider'>
-        <button class=" left-arrow" type="button" onClick={prevSlide}  > 
-          <span class="visually-hidden"> <i class="fa fa-angle-left" aria-hidden="true"></i> Previous</span>
-        </button>
-        <button class=" right-arrow" type="button" onClick={nextSlide} >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next  <i class="fa fa-angle-right" aria-hidden="true"></i> </span>
+    <section className='slider'>
+      <button class=" left-arrow" type="button" onClick={prevSlide}  >
+        <span class="visually-hidden"> <i class="fa fa-angle-left" aria-hidden="true"></i> Previous</span>
+      </button>
+      <button class=" right-arrow" type="button" onClick={nextSlide} >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next  <i class="fa fa-angle-right" aria-hidden="true"></i> </span>
 
-        </button>
-        {ImageData.map((slide, index) => {
-          return (
-            <div
-              className={index === current ? 'slide active' : 'slide'}
-              key={index}
-            >
-              {index === current && (
-                <img src={slide.image} alt='travel' className='image' />
-              )}
-            </div>
-          );
-        })}
-      </section>
+      </button>
+      {ImageData.map((slide, index) => {
+        return (
+          <div
+            className={index === current ? 'slide active' : 'slide'}
+            key={index}
+          >
+            {index === current && (
+              <img src={slide.image} alt='travel' className='image' />
+            )}
+          </div>
+        );
+      })}
+    </section>
 
-    </>
   );
 }
 

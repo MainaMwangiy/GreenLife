@@ -4,7 +4,7 @@ import './about.css'
 // import img from '../assets/logo.svg'
 
 export default function About() {
-    return <>
+    return (
         <div className="cnt-st">
             <div class="blog-post">
                 <div class="blog-post-info">
@@ -21,6 +21,6 @@ export default function About() {
                 </div>
 
             </div>
-        </div>
-    </>;
+        </div>)
+;
 }

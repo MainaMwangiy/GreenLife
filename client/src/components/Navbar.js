@@ -64,89 +64,87 @@ function Navbar() {
 
 
   return (
-    <>
-      <nav className='navbar'>
-        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          Green Life Africa
-        </Link>
-        <div className='menu-icon' onClick={handleClick}>
-          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-        </div>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li className='nav-item'
-            onMouseEnter={onCompanyMouseEnter}
-            onMouseLeave={onCompanyMouseLeave}
-          >
-            <Link 
-            to='/' 
-            className='nav-links' 
+    <nav className='navbar'>
+      <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+        Green Life Africa
+      </Link>
+      <div className='menu-icon' onClick={handleClick}>
+        <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+      </div>
+      <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+        <li className='nav-item'
+          onMouseEnter={onCompanyMouseEnter}
+          onMouseLeave={onCompanyMouseLeave}
+        >
+          <Link
+            to='/'
+            className='nav-links'
             onClick={closeMobileMenu}
-            >
-              Home <i className='fas fa-caret-down' />
-            </Link>
-            {codropdown && <CompanyDropDown />}
-          </li>
-
-          <li
-            className='nav-item'
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
           >
-            <Link
-              // to='/services'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Services <i className='fas fa-caret-down' />
-            </Link>
-            {dropdown && <ServiceDropDown />}
-          </li>
-          <li
-            className='nav-item'
-            onMouseEnter={onProductMouseEnter}
-            onMouseLeave={onProductMouseLeave}
-          >
-            <Link
-              // to='/projects'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Projects <i className='fas fa-caret-down' />
-            </Link>
-            {pdropdown && <ProjectDropDown />}
-          </li>
-          <li className='nav-item'>
-            <Link
-              to='/gallery'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Gallery
-            </Link>
-          </li>
-          <li className='nav-item'>
-            <Link
-              to='/contact-us'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Contact Us
-            </Link>
-          </li>
-          <li>
-            <Link
-              to='/sign-up'
-              className='nav-links-mobile'
-              onClick={closeMobileMenu}
-            >
-              Sign Up
-            </Link>
-          </li>
+            Home <i className='fas fa-caret-down' />
+          </Link>
+          {codropdown && <CompanyDropDown />}
+        </li>
 
-        </ul>
-        <Button />
-      </nav>
-    </>
+        <li
+          className='nav-item'
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+        >
+          <Link
+            // to='/services'
+            className='nav-links'
+            onClick={closeMobileMenu}
+          >
+            Services <i className='fas fa-caret-down' />
+          </Link>
+          {dropdown && <ServiceDropDown />}
+        </li>
+        <li
+          className='nav-item'
+          onMouseEnter={onProductMouseEnter}
+          onMouseLeave={onProductMouseLeave}
+        >
+          <Link
+            // to='/projects'
+            className='nav-links'
+            onClick={closeMobileMenu}
+          >
+            Projects <i className='fas fa-caret-down' />
+          </Link>
+          {pdropdown && <ProjectDropDown />}
+        </li>
+        <li className='nav-item'>
+          <Link
+            to='/gallery'
+            className='nav-links'
+            onClick={closeMobileMenu}
+          >
+            Gallery
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link
+            to='/contact-us'
+            className='nav-links'
+            onClick={closeMobileMenu}
+          >
+            Contact Us
+          </Link>
+        </li>
+        <li>
+          <Link
+            to='/sign-up'
+            className='nav-links-mobile'
+            onClick={closeMobileMenu}
+          >
+            Sign Up
+          </Link>
+        </li>
+
+      </ul>
+      <Button />
+    </nav>
   );
 }
 

@@ -4,8 +4,11 @@ import Volunteer from './volunteer';
 import './donate.css'
 
 export default function Getinvolved() {
-    return <>
-        <Donate />
-        <Volunteer />
-    </>;
+    return (
+        <div>
+            <Donate />
+            <Volunteer />
+        </div>
+
+    );
 }

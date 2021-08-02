@@ -23,7 +23,7 @@ export default function FoodSecurityAndNutrition() {
         let result = await response.json();
         alert(result.status);
     };
-    return <>
+    return (
         <div className='container'>
             <div className='gb-coll'>
                 <div class="st1-style">
@@ -55,5 +55,5 @@ export default function FoodSecurityAndNutrition() {
                 </div>
             </div>
         </div>
-    </>;
+    );
 }

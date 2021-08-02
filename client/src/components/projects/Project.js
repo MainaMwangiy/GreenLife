@@ -4,10 +4,10 @@ import EnvironmentalJustice from './environmental-justice';
 import FoodSecurityAndNutrition from './food-security-and-nutrition';
 
 export default function Products() {
-  return <>
+  return (
     <div className='container'>
       <EnvironmentalJustice />
       <FoodSecurityAndNutrition />
     </div>
-  </>;
+  );
 }

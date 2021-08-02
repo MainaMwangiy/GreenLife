@@ -23,8 +23,8 @@ export default function Cleaning() {
         let result = await response.json();
         alert(result.status);
     };
-    return <>
-        <div className='container'>
+    return (
+        < div className = 'container' >
             <div className='gb-coll'>
                 <div class="st1-style">
                     <div class="st1-style-img">
@@ -54,6 +54,6 @@ export default function Cleaning() {
                 </div>
 
             </div>
-        </div>
-    </>;
+        </div >
+    );
 }

@@ -5,25 +5,25 @@ import img from '../assets/school.jpg'
 export default function EnvironmentalJustice() {
     const [status, setStatus] = useState("Submit");
     const handleSubmit = async (e) => {
-      e.preventDefault();
-      setStatus("Sending...");
-      const { exampleInputName,email } = e.target.elements;
-      let details = {
-        exampleInputName: exampleInputName.value,
-        email: email.value
-      };
-      let response = await fetch("http://localhost:5000/service", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json;charset=utf-8",
-        },
-        body: JSON.stringify(details),
-      });
-      setStatus("Submit");
-      let result = await response.json();
-      alert(result.status);
+        e.preventDefault();
+        setStatus("Sending...");
+        const { exampleInputName, email } = e.target.elements;
+        let details = {
+            exampleInputName: exampleInputName.value,
+            email: email.value
+        };
+        let response = await fetch("http://localhost:5000/service", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8",
+            },
+            body: JSON.stringify(details),
+        });
+        setStatus("Submit");
+        let result = await response.json();
+        alert(result.status);
     };
-    return <>
+    return (
         <div className='container'>
             <div className='gb-coll'>
                 <div class="st1-style">
@@ -65,15 +65,15 @@ export default function EnvironmentalJustice() {
                             The project is in a competition form, where each green team and other students wanting to be part, will be tasked to come up with a project using the 3R’s. They are expected to recycle waste materials to come up with new creative products. They send a
                             short video, maximum 3 minutes, explaining the problem, their idea including the solution and how it can help.
                         </p>
-                        <form onSubmit={handleSubmit} style={{border:"none"}}>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="exampleInputName" required  style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
-              </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="email" required  style={{ borderRadius: "1rem" }} placeholder="Email Adress" aria-describedby="nameHelp"></input>
-              </div>
-              <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>{status}</button>
-            </form>
+                        <form onSubmit={handleSubmit} style={{ border: "none" }}>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="exampleInputName" required style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="email" required style={{ borderRadius: "1rem" }} placeholder="Email Adress" aria-describedby="nameHelp"></input>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>{status}</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -103,15 +103,15 @@ export default function EnvironmentalJustice() {
                             Recycling of waste  biodegradable waste decomposed to provide fertilizer
 
                         </p>
-                        <form onSubmit={handleSubmit} style={{border:"none"}}>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="exampleInputName" required  style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
-              </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="email" required  style={{ borderRadius: "1rem" }} placeholder="Email Adress" aria-describedby="nameHelp"></input>
-              </div>
-              <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>{status}</button>
-            </form>
+                        <form onSubmit={handleSubmit} style={{ border: "none" }}>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="exampleInputName" required style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="email" required style={{ borderRadius: "1rem" }} placeholder="Email Adress" aria-describedby="nameHelp"></input>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>{status}</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -133,19 +133,19 @@ export default function EnvironmentalJustice() {
                             It is against this background that Green Life Africa initiated the MTI YANGU CHALLENGE campaign which targets to plant 1Million trees in Machakos county by 2024.  The campaign challenges individuals to take environmental responsibility and plant trees during
                             their birthdays based on the number of years they have lived. It is both promoted online, on ground and on air.
                         </p>
-                        <form onSubmit={handleSubmit} style={{border:"none"}}>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="exampleInputName" required  style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
-              </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="email" required  style={{ borderRadius: "1rem" }} placeholder="Email Adress" aria-describedby="nameHelp"></input>
-              </div>
-              <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>{status}</button>
-            </form>
+                        <form onSubmit={handleSubmit} style={{ border: "none" }}>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="exampleInputName" required style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="email" required style={{ borderRadius: "1rem" }} placeholder="Email Adress" aria-describedby="nameHelp"></input>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>{status}</button>
+                        </form>
                     </div>
                 </div>
             </div>
 
         </div>
-    </>;
+    );
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {ProjectMenuItems } from './ProjectMenuItems';
+import { ProjectMenuItems } from './ProjectMenuItems';
 import './ProjectDropDown.css';
 import { Link } from 'react-router-dom';
 
@@ -9,26 +9,25 @@ function ProjectDropdown() {
   const handleClick = () => setClick(!click);
 
   return (
-    <>
-      <ul
-        onClick={handleClick}
-        className={click ? 'prduct-menu clicked' : 'prduct-menu'}
-      >
-        {ProjectMenuItems.map((item, index) => {
-          return (
-            <li key={index}>
-              <Link
-                className={item.cName}
-                to={item.path}
-                onClick={() => setClick(false)}
-              >
-                {item.title}
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-    </>
+    <ul
+      onClick={handleClick}
+      className={click ? 'prduct-menu clicked' : 'prduct-menu'}
+    >
+      {ProjectMenuItems.map((item, index) => {
+        return (
+          <li key={index}>
+            <Link
+              className={item.cName}
+              to={item.path}
+              onClick={() => setClick(false)}
+            >
+              {item.title}
+            </Link>
+          </li>
+        );
+      })}
+    </ul>
+
   );
 }
 

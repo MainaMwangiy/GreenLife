@@ -7,12 +7,12 @@ import GarbageCollection from './Garbage-Collection';
 import SanitaryBinCollection from "./Sanitary-bin-collection"
 
 export default function Services() {
-  return <>
+  return (
     <div className='container'>
-      <GarbageCollection/>
-      <SanitaryBinCollection/>
-      <Cleaning/>
-      <Fumigation/>
+      <GarbageCollection />
+      <SanitaryBinCollection />
+      <Cleaning />
+      <Fumigation />
     </div>
-  </>;
+  );
 }

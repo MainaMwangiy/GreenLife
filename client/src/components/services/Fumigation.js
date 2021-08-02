@@ -7,7 +7,7 @@ export default function Fumigation() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus("Sending...");
-        const { exampleInputName,email } = e.target.elements;
+        const { exampleInputName, email } = e.target.elements;
         let details = {
             exampleInputName: exampleInputName.value,
             email: email.value
@@ -23,7 +23,7 @@ export default function Fumigation() {
         let result = await response.json();
         alert(result.status);
     };
-    return <>
+    return (
         <div className='container'>
             <div className='gb-coll'>
 
@@ -54,5 +54,5 @@ export default function Fumigation() {
                 </div>
             </div>
         </div>
-    </>;
+    );
 }

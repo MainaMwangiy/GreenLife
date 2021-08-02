@@ -8,7 +8,6 @@ import Project from './components/projects/Project';
 import GarbageCollection from './components/services/Garbage-Collection';
 import ContactUs from './components/pages/ContactUs';
 import SignUp from './components/pages/SignUp';
-import Marketing from './components/pages/Marketing';
 import Consulting from './components/pages/Consulting';
 import Gallery from './components/pages/Gallery';
 import About from './components/Company/About';
@@ -41,7 +40,6 @@ function App() {
         <Route path='/food-security-and-nutrition' component={FoodSecurityAndNutrition} />
         <Route path='/contact-us' component={ContactUs} />
         <Route path='/sign-up' component={SignUp} />
-        <Route path='/marketing' component={Marketing} />
         <Route path='/consulting' component={Consulting} />
         <Route path='/gallery' component={Gallery} />
         <Route path='/donate' component={Donate} />

@@ -16,7 +16,7 @@ import CoreValues from '../Company/core-values';
 
 export default function Landing() {
     return (
-        <>
+        <div>
             <ImageSlider slides={ImageData} />
             {/* <CarouselImage/> */}
             <div style={{ textAlign: "center", color: "orange", backgroundColor: "#fff" }}>
@@ -278,6 +278,6 @@ export default function Landing() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }

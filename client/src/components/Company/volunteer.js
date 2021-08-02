@@ -2,7 +2,7 @@ import React from 'react';
 import './donate.css'
 
 export default function Volunteer() {
-    return <>
+    return (
         <div className="donate">
             <div>
                 <p>Volunteering </p>
@@ -11,5 +11,5 @@ export default function Volunteer() {
                 </div>
             </div>
         </div>
-    </>;
+    );
 }

@@ -1,4 +1,4 @@
-import React,{useState} from "react"
+import React, { useState } from "react"
 import { ImageData } from "../pages/ImageData"
 import CloseIcon from '@material-ui/icons/Close';
 import "./gallery.css"
@@ -11,21 +11,21 @@ const GalleryData = () => {
         setModel(true)
     }
     return (
-        <>
-        <div className={model ? "model open" : "model"}>
-            <img src={tempimgSrc} alt="modelimg"/>
-            <CloseIcon onClick={()=>setModel(false)}/>
-        </div>
+        <div>
+            <div className={model ? "model open" : "model"}>
+                <img src={tempimgSrc} alt="modelimg" />
+                <CloseIcon onClick={() => setModel(false)} />
+            </div>
             <div className="gallery">
                 {ImageData.map((item, index) => {
                     return (
-                        <div className="pics" key={index} onClick={()=>getImg(item.image)}>
-                            <img src={item.image} alt={item.id} style={{width:"100%"}}/>
+                        <div className="pics" key={index} onClick={() => getImg(item.image)}>
+                            <img src={item.image} alt={item.id} style={{ width: "100%" }} />
                         </div>
                     )
                 })}
             </div>
-        </>
+        </div>
     )
 }
 

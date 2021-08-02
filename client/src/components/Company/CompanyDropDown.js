@@ -9,26 +9,24 @@ function CompanyDropdown() {
   const handleClick = () => setClick(!click);
 
   return (
-    <>
-      <ul
-        onClick={handleClick}
-        className={click ? 'company-menu clicked' : 'company-menu'}
-      >
-        {CompanyMenuItems.map((item, index) => {
-          return (
-            <li key={index}>
-              <Link
-                className={item.cName}
-                to={item.path}
-                onClick={() => setClick(false)}
-              >
-                {item.title}
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-    </>
+    <ul
+      onClick={handleClick}
+      className={click ? 'company-menu clicked' : 'company-menu'}
+    >
+      {CompanyMenuItems.map((item, index) => {
+        return (
+          <li key={index}>
+            <Link
+              className={item.cName}
+              to={item.path}
+              onClick={() => setClick(false)}
+            >
+              {item.title}
+            </Link>
+          </li>
+        );
+      })}
+    </ul>
   );
 }
 
