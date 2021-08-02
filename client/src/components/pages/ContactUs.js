@@ -67,13 +67,13 @@ const ContactUs = () => {
               </div>
               <form onSubmit={handleSubmit}>
                 <div class="mb-3">
-                  <input type="text" class="form-control" id="exampleInputName" placeholder="Your Full Name." aria-describedby="nameHelp" id="fullname" required ></input>
+                  <input type="text" class="form-control" id="fullname" placeholder="Your Full Name." aria-describedby="nameHelp" required ></input>
                 </div>
                 <div class="mb-3">
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Email." aria-describedby="emailHelp" id="email" required></input>
+                  <input type="email" class="form-control" id="email" placeholder="Your Email." aria-describedby="emailHelp"  required></input>
                 </div>
                 <div class="mb-3">
-                  <input type="text" class="form-control" id="exampleInputsubject" placeholder="Subject." aria-describedby="subjectHelp" id="subject" required ></input>
+                  <input type="text" class="form-control" id="subject" placeholder="Subject." aria-describedby="subjectHelp" required ></input>
                 </div>
                 <div class="mb-3">
                   <textarea class="form-control" aria-label="With textarea" placeholder="Message." id="message" required ></textarea>

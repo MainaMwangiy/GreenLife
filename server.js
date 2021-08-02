@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(5000, () => console.log("Server Running"));
+app.listen(process.env.PORT || 5000, () => console.log("Server Running"));
 const contactEmail = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 587,
@@ -34,8 +34,8 @@ router.post("/contact", (req, res) => {
     const message = req.body.message;
     const mail = {
         from: fullname,
-        to: process.env.MAIL_USER,
-        subject: "Contact Green Life Africa",
+        to: process.env.HOST_MAIL,
+        subject: "Green Life Africa",
         html: ` <div style={justify-content:"center"}> 
         <p> Hi. I am ${fullname} and i have a ${subject} to Green Life Africa.</p>
         <p> My main concern is that ${message}</p>
@@ -57,7 +57,7 @@ router.post("/service", (req, res) => {
     const email = req.body.email;
     const mail = {
         from: exampleInputName,
-        to: process.env.MAIL_USER,
+        to: process.env.HOST_MAIL,
         subject: "Green Life Africa",
         html: ` <div style={justify-content:"center"}> 
         <p> Hi. I am ${exampleInputName} and i would like to know more about your service. 
