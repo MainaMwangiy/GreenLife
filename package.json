@@ -8,9 +8,9 @@
     "nodemon": "^2.0.12"
   },
   "scripts": {
-    "client": "cd client && npm start",
+    "client": "npm start --prefix client",
     "server": "nodemon server.js",
-    "heroku-postbuild": "npm install",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "start": "concurrently --kill-others-on-fail  \"npm run client\" \"npm run server\""
   }
 }
