@@ -8,6 +8,8 @@
     "nodemon": "^2.0.12"
   },
   "scripts": {
+    "postinstall": "npm run build",
+    "build": "cd client/ && npm install && npm run build",
     "client": "npm start --prefix client",
     "server": "nodemon server.js",
     "start": "concurrently --kill-others-on-fail  \"npm run client\" \"npm run server\""
