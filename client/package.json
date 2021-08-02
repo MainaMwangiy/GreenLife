@@ -25,7 +25,7 @@
   "scripts": {
     "start": "react-scripts start",
     "postinstall": "npm run build",
-    "build": "cd packages/react-scripts && node bin/react-scripts.js build",
+    "build": "cd client/ && npm install && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
