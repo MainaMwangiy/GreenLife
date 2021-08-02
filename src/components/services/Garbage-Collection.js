@@ -1,6 +1,6 @@
 import React from 'react';
 import "./services.css";
-import img from '../assets/DSC_8589.jpg'
+import img from '../assets/school.jpg'
 
 export default function GarbageCollection() {
   return <>
@@ -26,7 +26,9 @@ export default function GarbageCollection() {
               In addition, the advent of devolution has inspired growth of
               secondary towns, which are likely to exacerbate the solid
               waste management situation exposing the urban citizenry to
-              wanton suffering. The impacts of solid waste if not properly
+              wanton suffering. 
+              <br/>
+              The impacts of solid waste if not properly
               managed within the urban settlements particularly cities
               and big municipalities can be disastrous. But this also
               presents opportunities of turning the waste into a resource!
@@ -37,6 +39,10 @@ export default function GarbageCollection() {
               Get a free quote by booking our service.
 
             </p>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="exampleInputName" style={{ borderRadius: "1rem" }}  placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
+            </div>
+            <button type="submit" class="btn btn-primary" style={{borderRadius:"1rem" , width:"100%" }}>Submit</button>
           </div>
         </div>
       </div>

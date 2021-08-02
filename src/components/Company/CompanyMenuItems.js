@@ -10,8 +10,8 @@ export const CompanyMenuItems = [
       cName: 'dropdown-link'
     },
     {
-      title: 'Donate',
-      path: '/donate',
+      title: 'Get involved',
+      path: '/get-involved',
       cName: 'dropdown-link'
     }
   ];

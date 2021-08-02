@@ -4,7 +4,11 @@ import ImageSlider from './ImageSlider';
 import { ImageData } from './ImageData';
 import '../pages/Landing.css'
 import cntimg from "../assets/counts-img.svg"
-import img from "../assets/IMG_9400.jpg";
+import img from "../assets/school.jpg";
+import goal2 from "../assets/E-WEB-Goal-02.png"
+import goal6 from "../assets/E-WEB-Goal-06.png"
+import goal13 from "../assets/E-WEB-Goal-13.png"
+import goal17 from "../assets/E-WEB-Goal-17.png"
 // import counts from "../assets/school.jpg"
 import About from '../Company/About';
 import CountUp from 'react-countup';
@@ -14,14 +18,15 @@ export default function Landing() {
     return (
         <>
             <ImageSlider slides={ImageData} />
-            <div style={{ textAlign: "center", color: "orange",backgroundColor:"#fff" }}>
+            {/* <CarouselImage/> */}
+            <div style={{ textAlign: "center", color: "orange", backgroundColor: "#fff" }}>
                 <h1>
                     About
                 </h1>
             </div>
             <About />
-            <CoreValues/>
-            <div style={{ textAlign: "center", color: "orange" ,  backgroundColor:"#fff"}}>
+            <CoreValues />
+            <div style={{ textAlign: "center", color: "orange", backgroundColor: "#fff" }}>
                 <h1>
                     Impact
                 </h1>
@@ -166,30 +171,54 @@ export default function Landing() {
                 </div>
             </section>
 
+            <div style={{ textAlign: "center", color: "orange", backgroundColor: "#fff" }}>
+                <h1>
+                    Our Focus SDGs
+                </h1>
+            </div>
+            <div className="focus-container">
+                <div className="focus-row">
+                    <div className="focus-col-3">
+                        <img src={goal2} alt="Focus" className="focus-img"  ></img>
 
-            <div style={{ textAlign: "center", color: "orange",backgroundColor:"#fff" }}>
+                    </div>
+                    <div className="focus-col-3">
+                        <img src={goal6} alt="Focus" className="focus-img"  ></img>
+
+                    </div>
+                    <div className="focus-col-3">
+                        <img src={goal13} alt="Focus" className="focus-img"   ></img>
+
+                    </div>
+                    <div className="focus-col-3">
+                        <img src={goal17} alt="Focus" className="focus-img"   ></img>
+
+                    </div>
+                </div>
+            </div>
+
+            <div style={{ textAlign: "center", color: "orange", backgroundColor: "#fff" }}>
                 <h1>
                     Partners
                 </h1>
             </div>
-            <div className="cnt-st">
-                <div class="blog-post">
-                    <div class="blog-post-info">
-                        <div class="row row-cols-1 row-cols-md-4 g-4">
-                            <div class="col partners">
-                                <img src={cntimg} alt="Section " style={{ width: "100px", height: "100px" }} id="rmvimgsect"></img>
-                            </div>
-                            <div class="col partners">
-                                <img src={cntimg} alt="Section " style={{ width: "100px", height: "100px" }} id="rmvimgsect"></img>
-                            </div>
-                            <div class="col partners">
-                                <img src={cntimg} alt="Section " style={{ width: "100px", height: "100px" }} id="rmvimgsect"></img>
-                            </div>
-                            <div class="col partners">
-                                <img src={cntimg} alt="Section " style={{ width: "100px", height: "100px" }} id="rmvimgsect"></img>
-                            </div>
+            <div className="partners-container">
+                <div className="partners-row">
+                    <div className="partners-col-3">
+                        <img src={cntimg} alt="partners" className="partners-img"  ></img>
 
-                        </div>
+                    </div>
+                    <div className="partners-col-3">
+                        <img src={cntimg} alt="partners" className="partners-img"  ></img>
+
+                    </div>
+                    <div className="partners-col-3">
+                        <img src={cntimg} alt="partners" className="partners-img"   ></img>
+
+                    </div>
+                    <div className="partners-col-3">
+                        <img src={cntimg} alt="partners" className="partners-img"   ></img>
+
                     </div>
                 </div>
             </div>
@@ -204,7 +233,7 @@ export default function Landing() {
                                 the growth in population, which is significantly high in the
                                 urban areas. With a 4.3% growth in urbanization annually
                             </p>
-                            <a className="btn btn-primary" href = "/garbage-collection"> Read More...</a>
+                            <a className="btn btn-primary" href="/garbage-collection"> Read More...</a>
                         </div>
 
                     </div>
@@ -221,7 +250,7 @@ export default function Landing() {
                                 disposal in commercial buildings, schools and
                                 institutions...
                             </p>
-                            <a className="btn btn-primary" href = "/sanitary-bin-collection"> Read More...</a>
+                            <a className="btn btn-primary" href="/sanitary-bin-collection"> Read More...</a>
                         </div>
 
                     </div>
@@ -232,7 +261,7 @@ export default function Landing() {
                             <img src={img} class="card-img-top" alt="..." id="imgst"></img>
                             <h5 class="card-title">Cleaning services</h5>
                             <p class="card-text"> Project coming up in future</p>
-                            <a className="btn btn-primary" href = "/cleaning"> Read More...</a>
+                            <a className="btn btn-primary" href="/cleaning"> Read More...</a>
                         </div>
 
                     </div>
@@ -243,7 +272,7 @@ export default function Landing() {
                             <img src={img} class="card-img-top" alt="..." id="imgst"></img>
                             <h5 class="card-title">Fumigation and Pest control</h5>
                             <p class="card-text"> Project coming up in future</p>
-                            <a className="btn btn-primary" href = "/fumigation"> Read More...</a>
+                            <a className="btn btn-primary" href="/fumigation"> Read More...</a>
                         </div>
 
                     </div>

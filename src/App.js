@@ -19,6 +19,9 @@ import EnvironmentalJustice from './components/projects/environmental-justice';
 import FoodSecurityAndNutrition from './components/projects/food-security-and-nutrition';
 import Landing from './components/pages/Landing';
 import CoreValues from './components/Company/core-values';
+import Donate from './components/Company/Donate';
+import volunteer from './components/Company/volunteer';
+import Getinvolved from './components/Company/Get-involved';
 
 function App() {
   return (
@@ -41,6 +44,9 @@ function App() {
         <Route path='/marketing' component={Marketing} />
         <Route path='/consulting' component={Consulting} />
         <Route path='/gallery' component={Gallery} />
+        <Route path='/donate' component={Donate} />
+        <Route path='/volunteer' component={volunteer} />
+        <Route path="/get-involved" component={Getinvolved}/>
       </Switch>
       <Footer/>
     </Router>

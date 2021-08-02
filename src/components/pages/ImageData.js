@@ -1,4 +1,3 @@
-// import img1 from "../assets/home-page.JPG"
 export const ImageData = [
     {
       image:

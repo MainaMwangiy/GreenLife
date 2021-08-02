@@ -1,6 +1,6 @@
 import React from 'react';
 import "./project.css"
-import img from '../assets/DSC_8589.jpg'
+import img from '../assets/school.jpg'
 
 export default function EnvironmentalJustice() {
     return <>
@@ -19,6 +19,10 @@ export default function EnvironmentalJustice() {
                             This is a brainchild of the ‘Usafi mtaani project’ (Garbage collection service). As the garbage collecting team were doing their weekly rounds, it was realized that households were disposing off valuables such as clothes, shoes, toys and electronics. It was thought wise the valuables could help
                             the less fortunate in the community. Since 2016, more than 1,000 needy individuals have benefited from the project.
                         </p>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="exampleInputName" style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>Submit</button>
                     </div>
                 </div>
 
@@ -41,6 +45,10 @@ export default function EnvironmentalJustice() {
                             The project is in a competition form, where each green team and other students wanting to be part, will be tasked to come up with a project using the 3R’s. They are expected to recycle waste materials to come up with new creative products. They send a
                             short video, maximum 3 minutes, explaining the problem, their idea including the solution and how it can help.
                         </p>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="exampleInputName" style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>Submit</button>
                     </div>
                 </div>
             </div>
@@ -70,6 +78,10 @@ export default function EnvironmentalJustice() {
                             Recycling of waste  biodegradable waste decomposed to provide fertilizer
 
                         </p>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="exampleInputName" style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>Submit</button>
                     </div>
                 </div>
             </div>
@@ -91,6 +103,10 @@ export default function EnvironmentalJustice() {
                             It is against this background that Green Life Africa initiated the MTI YANGU CHALLENGE campaign which targets to plant 1Million trees in Machakos county by 2024.  The campaign challenges individuals to take environmental responsibility and plant trees during
                             their birthdays based on the number of years they have lived. It is both promoted online, on ground and on air.
                         </p>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="exampleInputName" style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>Submit</button>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,23 @@
+.donate{
+    margin-top: 3.2rem;
+    padding: 6rem;
+    font-size: medium;
+}
+#donate-styl{
+    text-decoration: none;
+    list-style: circle;
+    list-style-position: inside;
+    font-size: medium;
+}
+@media screen and  (max-width: 960px) {
+    .donate{
+        padding: 2rem;
+        font-size: small;
+    }
+    #donate-styl{
+        text-decoration: none;
+        list-style: circle;
+        list-style-position: inside;
+        font-size: small;
+    }
+}

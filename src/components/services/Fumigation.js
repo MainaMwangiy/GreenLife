@@ -1,6 +1,6 @@
 import React from 'react';
 import "./services.css";
-import img from '../assets/DSC_8589.jpg'
+import img from '../assets/school.jpg'
 
 export default function Fumigation() {
     return <>
@@ -21,6 +21,10 @@ export default function Fumigation() {
                         <p>
                             Project coming up in future....
                         </p>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="exampleInputName" style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>Submit</button>
                     </div>
                 </div>
             </div>

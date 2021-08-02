@@ -89,9 +89,101 @@
 #page-home .content main .points {
     margin-top: 15px;
 }
+.focus-container{
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.focus-row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
 
-@media(max-width: 960px) {
+.focus-col-3{
+    flex: 0 0 auto;
+    width: 25%;
+}
+.focus-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+}
+.partners-container{
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.partners-row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
 
+.partners-col-3{
+    flex: 0 0 auto;
+    width: 25%;
+}
+.partners-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 1rem;
+}
+@media (min-width: 576px) {
+    .focus-container {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    .focus-container {
+      max-width: 720px;
+    }
+
+  }
+  @media (min-width: 992px) {
+    .focus-container {
+      max-width: 960px;
+    }
+
+  }
+  @media (min-width: 1200px) {
+    .focus-container {
+      max-width: 1140px;
+    }
+
+  }
+  @media (min-width: 1400px) {
+    .focus-container {
+      max-width: 1320px;
+    }
+
+  }
+
+@media screen and (max-width: 960px) {
+    .focus-img{
+        width: 60px;
+        height: 60px;
+        border-radius: 0.5rem;
+        margin: 1rem;
+    }
+    .partners-img{
+        width: 60px;
+        height: 60px;
+        border-radius: 0.5rem;
+        margin: 1rem;
+    }
     #page-home {
         height: 100vh;
         background: url('../assets/mobi.svg') no-repeat;

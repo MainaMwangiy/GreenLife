@@ -37,8 +37,16 @@ function Footer() {
             </ul>
           </div>
           <div class="col">
-            <h2>Donate to Us
+            <h2>Get Involved
             </h2>
+            <ul id="list-unstyled">
+              <li>
+                <a href="/donate">Donate With Us</a>
+              </li>
+              <li>
+                <a href="/volunteer">Volunteer With Us</a>
+              </li>
+              </ul>
           </div>
           <div class="col">
           <h2>
