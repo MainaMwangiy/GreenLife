@@ -43,12 +43,12 @@ export default function Fumigation() {
                         </p>
                         <form onSubmit={handleSubmit} style={{ border: "none" }}>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="exampleInputName" required style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
+                                <input type="text" class="form-control" id="exampleInputName" required style={{ borderRadius: "1rem" }} placeholder="Enquire about the service..." aria-describedby="nameHelp"></input>
                             </div>
                             <div class="mb-3">
                                 <input type="text" class="form-control" id="email" required style={{ borderRadius: "1rem" }} placeholder="Email Adress" aria-describedby="nameHelp"></input>
                             </div>
-                            <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>{status}</button>
+                            <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%",background:"orange",border:"none" }}>{status}</button>
                         </form>
                     </div>
                 </div>

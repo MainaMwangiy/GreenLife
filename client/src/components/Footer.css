@@ -1,6 +1,6 @@
 .footer{
     color: #fff;
-    background-color: green;
+    background: linear-gradient(90deg, rgb(59, 192, 70) 0%, rgb(24, 155, 20) 100%);
     text-align: center;
     height: auto;
     width: 100%;
@@ -25,7 +25,7 @@
 @media(max-width: 960px) {
     .footer{
         color: #fff;
-        background-color: green;
+        background: linear-gradient(90deg, rgb(59, 192, 70) 0%, rgb(24, 155, 20) 100%);
         text-align: center;
         height: auto;
         width: 100%

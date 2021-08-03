@@ -40,9 +40,9 @@ export default function EnvironmentalJustice() {
                             the less fortunate in the community. Since 2016, more than 1,000 needy individuals have benefited from the project.
                         </p>
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="exampleInputName" style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
+                            <input type="text" class="form-control" id="exampleInputName" style={{ borderRadius: "1rem" }} placeholder="Enquire about the program..." aria-describedby="nameHelp"></input>
                         </div>
-                        <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>Submit</button>
+                        <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%",background:"orange",border:"none" }}>Submit</button>
                     </div>
                 </div>
 
@@ -67,12 +67,12 @@ export default function EnvironmentalJustice() {
                         </p>
                         <form onSubmit={handleSubmit} style={{ border: "none" }}>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="exampleInputName" required style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
+                                <input type="text" class="form-control" id="exampleInputName" required style={{ borderRadius: "1rem" }} placeholder="Enquire about the program..." aria-describedby="nameHelp"></input>
                             </div>
                             <div class="mb-3">
                                 <input type="text" class="form-control" id="email" required style={{ borderRadius: "1rem" }} placeholder="Email Adress" aria-describedby="nameHelp"></input>
                             </div>
-                            <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>{status}</button>
+                            <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%",background:"orange",border:"none" }}>{status}</button>
                         </form>
                     </div>
                 </div>
@@ -105,12 +105,12 @@ export default function EnvironmentalJustice() {
                         </p>
                         <form onSubmit={handleSubmit} style={{ border: "none" }}>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="exampleInputName" required style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
+                                <input type="text" class="form-control" id="exampleInputName" required style={{ borderRadius: "1rem" }} placeholder="Enquire about the program..." aria-describedby="nameHelp"></input>
                             </div>
                             <div class="mb-3">
                                 <input type="text" class="form-control" id="email" required style={{ borderRadius: "1rem" }} placeholder="Email Adress" aria-describedby="nameHelp"></input>
                             </div>
-                            <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>{status}</button>
+                            <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%",background:"orange",border:"none" }}>{status}</button>
                         </form>
                     </div>
                 </div>
@@ -135,12 +135,12 @@ export default function EnvironmentalJustice() {
                         </p>
                         <form onSubmit={handleSubmit} style={{ border: "none" }}>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="exampleInputName" required style={{ borderRadius: "1rem" }} placeholder="Type a message here to know more about the service..." aria-describedby="nameHelp"></input>
+                                <input type="text" class="form-control" id="exampleInputName" required style={{ borderRadius: "1rem" }} placeholder="Enquire about the program...." aria-describedby="nameHelp"></input>
                             </div>
                             <div class="mb-3">
                                 <input type="text" class="form-control" id="email" required style={{ borderRadius: "1rem" }} placeholder="Email Adress" aria-describedby="nameHelp"></input>
                             </div>
-                            <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%" }}>{status}</button>
+                            <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%",background:"orange",border:"none" }}>{status}</button>
                         </form>
                     </div>
                 </div>

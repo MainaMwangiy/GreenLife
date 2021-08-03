@@ -16,7 +16,7 @@ export default function SignUp() {
       <div class="mb-3 s-st">
         <textarea class="form-control" aria-label="With textarea" placeholder="Message."></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%",background:"orange",border:"none" }}>Submit</button>
     </form>
   </div>
 

@@ -7,12 +7,13 @@
   }
   
   .prduct-menu li {
-    background: #ffb618;
+    /* background: #ffb618; */
+    background: orange;
     cursor: pointer;
   }
   
   .prduct-menu li:hover {
-    background: #ffb618;
+    background: orange;
     color: #fff;
   }
   
@@ -31,7 +32,7 @@
   
   @media screen and (max-width: 960px) {
     .fa-caret-down {
-      display: none;
+      display: flex;
     }
     .prduct-menu{
       flex-direction: column;

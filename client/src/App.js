@@ -8,7 +8,6 @@ import Project from './components/projects/Project';
 import GarbageCollection from './components/services/Garbage-Collection';
 import ContactUs from './components/pages/ContactUs';
 import SignUp from './components/pages/SignUp';
-import Consulting from './components/pages/Consulting';
 import Gallery from './components/pages/Gallery';
 import About from './components/Company/About';
 import SanitaryBinCollection from "./components/services/Sanitary-bin-collection"
@@ -21,6 +20,9 @@ import CoreValues from './components/Company/core-values';
 import Donate from './components/Company/Donate';
 import volunteer from './components/Company/volunteer';
 import Getinvolved from './components/Company/Get-involved';
+import NewsLetters from './components/Resources/NewsLetters'
+import Careers from './components/Resources/Careers'
+import ProjectReports from './components/Resources/ProjectReports'
 
 function App() {
   return (
@@ -31,7 +33,7 @@ function App() {
         <Route path='/about' component={About} />
         <Route path='/core-values' component={CoreValues} />
         <Route path='/services' component={Services} />
-        <Route path='/projects' component={Project} />
+        <Route path='/projects' component={Project} />  
         <Route path='/garbage-collection' component={GarbageCollection} />
         <Route path='/sanitary-bin-collection' component={SanitaryBinCollection} />
         <Route path='/cleaning' component={Cleaning} />
@@ -40,7 +42,9 @@ function App() {
         <Route path='/food-security-and-nutrition' component={FoodSecurityAndNutrition} />
         <Route path='/contact-us' component={ContactUs} />
         <Route path='/sign-up' component={SignUp} />
-        <Route path='/consulting' component={Consulting} />
+        <Route path='/news-letters' component={NewsLetters} />
+        <Route path='/careers' component={Careers} />
+        <Route path='/project-reports' component={ProjectReports} />
         <Route path='/gallery' component={Gallery} />
         <Route path='/donate' component={Donate} />
         <Route path='/volunteer' component={volunteer} />

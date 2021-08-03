@@ -30,7 +30,7 @@
     max-width: 98rem;
     padding: 5rem;
     background-color: #fff;
-    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
+    box-shadow: 0 1.4rem 8rem rgba(238, 234, 234, 0.727);
     display: flex;
     align-items: center;
     border-radius: .8rem;
@@ -61,7 +61,7 @@
     top: 0;
     left: 0;
     /* background: linear-gradient(to right, rgba(195, 229, 190, 0.445), rgba(14, 224, 7, 0.249)); */
-    box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, .05);
+    box-shadow: .5rem .5rem 3rem 1px rgba(235, 231, 231, 0.712);
     border-radius: .8rem;
 }
 
@@ -149,7 +149,7 @@
     max-width: 98rem;
     padding: 5rem;
     background-color: #fff;
-    box-shadow: 0 1.4rem 8rem rgba(93, 216, 10, 0.719);
+    box-shadow: 0 1.4rem 8rem rgba(213, 214, 212, 0.94);
     display: flex;
     align-items: center;
     border-radius: .8rem;
@@ -180,7 +180,7 @@
     top: 0;
     left: 0;
     /* background: linear-gradient(to right, rgba(44, 196, 95, 0.8), rgba(40, 247, 33, 0.8)); */
-    box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, .05);
+    box-shadow: .5rem .5rem 3rem 1px rgba(202, 199, 199, 0.884);
     border-radius: .8rem;
 }
 
@@ -262,7 +262,7 @@
     max-width: 98rem;
     padding: 5rem;
     background-color: #fff;
-    box-shadow: 0 1.4rem 8rem rgba(93, 216, 10, 0.719);
+    box-shadow: 0 1.4rem 8rem rgba(214, 214, 213, 0.719);
     display: flex;
     align-items: center;
     border-radius: .8rem;
@@ -293,7 +293,7 @@
     top: 0;
     left: 0;
     /* background: linear-gradient(to right, rgba(44, 196, 95, 0.8), rgba(40, 247, 33, 0.8)); */
-    box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, .05);
+    box-shadow: .5rem .5rem 3rem 1px rgba(223, 221, 221, 0.712);
     border-radius: .8rem;
 }
 
@@ -383,7 +383,7 @@
     max-width: 98rem;
     padding: 5rem;
     background-color: #fff;
-    box-shadow: 0 1.4rem 8rem rgba(93, 216, 10, 0.719);
+    box-shadow: 0 1.4rem 8rem rgba(198, 199, 197, 0.719);
     display: flex;
     align-items: center;
     border-radius: .8rem;
@@ -414,7 +414,7 @@
     top: 0;
     left: 0;
     /* background: linear-gradient(to right, rgba(44, 196, 95, 0.8), rgba(40, 247, 33, 0.8)); */
-    box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, .05);
+    box-shadow: .5rem .5rem 3rem 1px rgba(228, 224, 224, 0.823);
     border-radius: .8rem;
 }
 

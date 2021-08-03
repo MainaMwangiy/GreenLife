@@ -7,12 +7,12 @@
 }
 
 .dropdown-menu li {
-  background: #ff9b18;
+  background: orange;
   cursor: pointer;
 }
 
 .dropdown-menu li:hover {
-  background: #ff9b18;
+  background: orange;
   color: #fff;
 }
 
@@ -31,6 +31,6 @@
 
 @media screen and (max-width: 960px) {
   .fa-caret-down {
-    display: none;
+    display: flex;
   }
 }

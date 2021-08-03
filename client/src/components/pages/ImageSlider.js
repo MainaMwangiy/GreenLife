@@ -19,11 +19,11 @@ const ImageSlider = ({ slides }) => {
   return (
     <section className='slider'>
       <button class=" left-arrow" type="button" onClick={prevSlide}  >
-        <span class="visually-hidden"> <i class="fa fa-angle-left" aria-hidden="true"></i> Previous</span>
+        <span class="visually-hidden"> <i class="fa fa-angle-left" aria-hidden="true"></i> </span>
       </button>
       <button class=" right-arrow" type="button" onClick={nextSlide} >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next  <i class="fa fa-angle-right" aria-hidden="true"></i> </span>
+        <span class="visually-hidden"> <i class="fa fa-angle-right" aria-hidden="true"></i> </span>
 
       </button>
       {ImageData.map((slide, index) => {

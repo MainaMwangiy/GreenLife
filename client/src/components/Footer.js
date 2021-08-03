@@ -22,16 +22,19 @@ function Footer() {
           <h2>Socialize with us</h2>
           <ul id="list-unstyled">
             <li>
-              <a href="https://www.facebook.com"> <i class="fab fa-facebook"></i> Facebook</a>
+              <a href="https://web.facebook.com/greenlifeafricake"> <i class="fab fa-facebook"></i> Facebook</a>
             </li>
             <li>
               <a href="https://www.linkedin.com"> <i class="fab fa-linkedin-in"></i> LinkedIn</a>
             </li>
             <li>
-              <a href="https://www.twitter.com"> <i class="fab fa-twitter"></i> Twitter</a>
+              <a href="https://twitter.com/GLIFEAFRICA"> <i class="fab fa-twitter"></i> Twitter</a>
             </li>
             <li>
               <a href="https://www.youtube.com"> <i class="fab fa-youtube"></i> Youtube</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/greenlifeafricake/"> <i class="fab fa-instagram"></i> Instagram</a>
             </li>
           </ul>
         </div>

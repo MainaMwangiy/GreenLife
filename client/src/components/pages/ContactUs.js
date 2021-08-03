@@ -40,11 +40,13 @@ const ContactUs = () => {
                 To promote a healthy and wealthy community through ecofriendly practices
               </p>
               <div class="social-links" id="contact-social">
-                <a href="https://twitter.com/?lang=en" class="twitter"
+                <a href="https://twitter.com/GLIFEAFRICA" class="twitter"
                 ><i class="fab fa-twitter"></i></a>
-                <a href="https://www.facebook.com/" class="facebook"
+                <a href="https://web.facebook.com/greenlifeafricake" class="facebook"
                 ><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/" class="instagram"
+                <a href="https://www.youtube.com/" class="youtuube"
+                ><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/greenlifeafricake/" class="instagram"
                 ><i class="fab fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/" class="linkedin"
                 ><i class="fab fa-linkedin-in"></i></a>
@@ -78,7 +80,7 @@ const ContactUs = () => {
                 <div class="mb-3">
                   <textarea class="form-control" aria-label="With textarea" placeholder="Message." id="message" required ></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">{status}</button>
+                <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%",background:"orange",border:"none" }}>{status}</button>
               </form>
             </div>
           </div>

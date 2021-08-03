@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import ServiceDropDown from './services/ServiceDropDown';
 import ProjectDropDown from './projects/ProjectDropDown';
-import CompanyDropDown from './Company/CompanyDropDown';
+import ResourcesDropDown from './Resources/ResourcesDropDown';
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [pdropdown, setPDropdown] = useState(false);
-  const [codropdown, setCoDropdown] = useState(false);
+  const [redropdown, setReDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -45,21 +45,23 @@ function Navbar() {
       setPDropdown(false)
     }
   };
-  const onCompanyMouseEnter = () => {
+
+  const onResourcesMouseEnter = () => {
     if (window.innerWidth < 960) {
-      setCoDropdown(false)
+      setReDropdown(false)
     } else {
-      setCoDropdown(true)
+      setReDropdown(true)
     }
   }
 
-  const onCompanyMouseLeave = () => {
+  const onResourcesMouseLeave = () => {
     if (window.innerWidth < 960) {
-      setCoDropdown(false)
+      setReDropdown(false)
     } else {
-      setCoDropdown(false)
+      setReDropdown(false)
     }
   };
+
 
 
 
@@ -72,27 +74,22 @@ function Navbar() {
         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
       </div>
       <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-        <li className='nav-item'
-          onMouseEnter={onCompanyMouseEnter}
-          onMouseLeave={onCompanyMouseLeave}
-        >
+      <li className='nav-item'>
           <Link
             to='/'
             className='nav-links'
             onClick={closeMobileMenu}
           >
-            Home <i className='fas fa-caret-down' />
+            Home
           </Link>
-          {codropdown && <CompanyDropDown />}
         </li>
-
         <li
           className='nav-item'
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
         >
           <Link
-            // to='/services'
+            to='/services'
             className='nav-links'
             onClick={closeMobileMenu}
           >
@@ -106,22 +103,26 @@ function Navbar() {
           onMouseLeave={onProductMouseLeave}
         >
           <Link
-            // to='/projects'
+            to='/projects'
             className='nav-links'
             onClick={closeMobileMenu}
           >
-            Projects <i className='fas fa-caret-down' />
+            Programs <i className='fas fa-caret-down' />
           </Link>
           {pdropdown && <ProjectDropDown />}
         </li>
-        <li className='nav-item'>
+        <li className='nav-item'
+          onMouseEnter={onResourcesMouseEnter}
+          onMouseLeave={onResourcesMouseLeave}
+        >
           <Link
-            to='/gallery'
+            to='/'
             className='nav-links'
             onClick={closeMobileMenu}
           >
-            Gallery
+            Resources <i className='fas fa-caret-down' />
           </Link>
+          {redropdown && <ResourcesDropDown />}
         </li>
         <li className='nav-item'>
           <Link

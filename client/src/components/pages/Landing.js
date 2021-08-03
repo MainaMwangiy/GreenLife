@@ -1,8 +1,11 @@
 import React from 'react';
 import './ImageSlide.css';
+import "../pages/animations.css"
+import "../Company/core-value.css"
+import "../Company/index.css"
+import '../pages/Landing.css'
 import ImageSlider from './ImageSlider';
 import { ImageData } from './ImageData';
-import '../pages/Landing.css'
 import cntimg from "../assets/counts-img.svg"
 import img from "../assets/school.jpg";
 import goal2 from "../assets/E-WEB-Goal-02.png"
@@ -19,19 +22,132 @@ export default function Landing() {
         <div>
             <ImageSlider slides={ImageData} />
             {/* <CarouselImage/> */}
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 ftco-animate p-md-5">
+                        <div class="row py-md-5">
+                            <div class="col-md-12 nav-link-wrap mb-5">
+                                <div
+                                    class="nav ftco-animate nav-pills"
+                                    id="v-pills-tab"
+                                    role="tablist"
+                                    aria-orientation="vertical"
+                                >
+                                    <a
+                                        class="nav-link active"
+                                        id="v-pills-whatwedo-tab"
+                                        data-toggle="pill"
+                                        href="#v-pills-whatwedo"
+                                        role="tab"
+                                        aria-controls="v-pills-whatwedo"
+                                        aria-selected="true"
+                                    > Our Mission</a >
+
+                                    <a
+                                        class="nav-link"
+                                        id="v-pills-mission-tab"
+                                        data-toggle="pill"
+                                        href="#v-pills-mission"
+                                        role="tab"
+                                        aria-controls="v-pills-mission"
+                                        aria-selected="false"
+                                    > Our Vision </a>
+
+                                    <a
+                                        class="nav-link"
+                                        id="v-pills-goal-tab"
+                                        data-toggle="pill"
+                                        href="#v-pills-goal"
+                                        role="tab"
+                                        aria-controls="v-pills-goal"
+                                        aria-selected="false"
+                                    > Core values</a>
+                                </div>
+                            </div>
+                            <div class="col-md-12 d-flex align-items-center">
+                                <div class="tab-content ftco-animate" id="v-pills-tabContent">
+                                    <div
+                                        class="tab-pane fade show active"
+                                        id="v-pills-whatwedo"
+                                        role="tabpanel"
+                                        aria-labelledby="v-pills-whatwedo-tab"
+                                    >
+                                        <div>
+                                            <h2 class="mb-4">Mission</h2>
+                                            <p>
+                                                To promote a healthy and wealthy community through ecofriendly practices
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="tab-pane fade"
+                                        id="v-pills-mission"
+                                        role="tabpanel"
+                                        aria-labelledby="v-pills-mission-tab"
+                                    >
+                                        <div>
+                                            <h2 class="mb-4">Vision</h2>
+                                            <p>
+                                                Green, Healthy, Wealthy, Community!
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="tab-pane fade"
+                                        id="v-pills-goal"
+                                        role="tabpanel"
+                                        aria-labelledby="v-pills-goal-tab"
+                                    >
+                                        <div>
+                                            <h2 class="mb-4">Core values</h2>
+                                            <CoreValues />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div style={{ textAlign: "center", color: "orange", backgroundColor: "#fff" }}>
                 <h1>
-                    About
+                    Partners
                 </h1>
             </div>
+            <div className="partners-container">
+                <div className="partners-row">
+                    <div className="partners-col-3">
+                        <img src={cntimg} alt="partners" className="partners-img"  ></img>
+
+                    </div>
+                    <div className="partners-col-3">
+                        <img src={cntimg} alt="partners" className="partners-img"  ></img>
+
+                    </div>
+                    <div className="partners-col-3">
+                        <img src={cntimg} alt="partners" className="partners-img"   ></img>
+
+                    </div>
+                    <div className="partners-col-3">
+                        <img src={cntimg} alt="partners" className="partners-img"   ></img>
+
+                    </div>
+                </div>
+            </div>
+
             <About />
             <CoreValues />
-            <div style={{ textAlign: "center", color: "orange", backgroundColor: "#fff" }}>
-                <h1>
-                    Impact
-                </h1>
+            <div class="impact-post">
+                <div class="impact-post-info">
+                    <h1>
+                        Impact
+                    </h1>
+                </div>
             </div>
-            <section id="counts" class="counts">
+            <section class="counts">
                 <div class="container">
                     <div class="row">
                         <div
@@ -42,13 +158,13 @@ export default function Landing() {
                             <div class="content d-flex flex-column justify-content-center">
                                 <div class="row">
                                     <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                        <div class="count-box">
+                                        <div class="count-box" >
                                             <i class="fa fa-building"></i>
                                             <span data-toggle="counter-up">
                                                 <CountUp start={0} end={5} delay={0}>
                                                     {({ countUpRef }) => (
                                                         <div>
-                                                            <span ref={countUpRef} />
+                                                            <span ref={countUpRef} >  </span>
                                                         </div>
                                                     )}
                                                 </CountUp>
@@ -60,7 +176,7 @@ export default function Landing() {
                                         </div>
                                     </div>
                                     <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                        <div class="count-box">
+                                        <div class="count-box" >
                                             <i class="fa fa-trash"></i>
                                             <span data-toggle="counter-up"> <CountUp start={0} end={50} delay={0}>
                                                 {({ countUpRef }) => (
@@ -171,57 +287,32 @@ export default function Landing() {
                 </div>
             </section>
 
-            <div style={{ textAlign: "center", color: "orange", backgroundColor: "#fff" }}>
+            <div style={{ textAlign: "center", color: "orange", backgroundColor: "" }}>
                 <h1>
                     Our Focus SDGs
                 </h1>
             </div>
-            <div className="focus-container">
+            <div className="focus-container ">
                 <div className="focus-row">
-                    <div className="focus-col-3">
-                        <img src={goal2} alt="Focus" className="focus-img"  ></img>
+                    <div className="focus-col-3" data-aos="fade-left" data-aos-delay="200">
+                        <img src={goal2} alt="Focus" className="focus-img animated"  ></img>
 
                     </div>
                     <div className="focus-col-3">
-                        <img src={goal6} alt="Focus" className="focus-img"  ></img>
+                        <img src={goal6} alt="Focus" className="focus-img animated"  ></img>
 
                     </div>
                     <div className="focus-col-3">
-                        <img src={goal13} alt="Focus" className="focus-img"   ></img>
+                        <img src={goal13} alt="Focus" className="focus-img animated"   ></img>
 
                     </div>
                     <div className="focus-col-3">
-                        <img src={goal17} alt="Focus" className="focus-img"   ></img>
+                        <img src={goal17} alt="Focus" className="focus-img animated"   ></img>
 
                     </div>
                 </div>
             </div>
 
-            <div style={{ textAlign: "center", color: "orange", backgroundColor: "#fff" }}>
-                <h1>
-                    Partners
-                </h1>
-            </div>
-            <div className="partners-container">
-                <div className="partners-row">
-                    <div className="partners-col-3">
-                        <img src={cntimg} alt="partners" className="partners-img"  ></img>
-
-                    </div>
-                    <div className="partners-col-3">
-                        <img src={cntimg} alt="partners" className="partners-img"  ></img>
-
-                    </div>
-                    <div className="partners-col-3">
-                        <img src={cntimg} alt="partners" className="partners-img"   ></img>
-
-                    </div>
-                    <div className="partners-col-3">
-                        <img src={cntimg} alt="partners" className="partners-img"   ></img>
-
-                    </div>
-                </div>
-            </div>
 
             <div class="row row-cols-1 row-cols-md-4 " >
                 <div class="col" >
@@ -233,7 +324,7 @@ export default function Landing() {
                                 the growth in population, which is significantly high in the
                                 urban areas. With a 4.3% growth in urbanization annually
                             </p>
-                            <a className="btn btn-primary" href="/garbage-collection"> Read More...</a>
+                            <a className="btn btn-primary" style={{ backgroundColor: "orange", border: "none" }} href="/garbage-collection"> Read More...</a>
                         </div>
 
                     </div>
@@ -250,7 +341,7 @@ export default function Landing() {
                                 disposal in commercial buildings, schools and
                                 institutions...
                             </p>
-                            <a className="btn btn-primary" href="/sanitary-bin-collection"> Read More...</a>
+                            <a className="btn btn-primary" style={{ backgroundColor: "orange", border: "none" }} href="/sanitary-bin-collection"> Read More...</a>
                         </div>
 
                     </div>
@@ -261,7 +352,7 @@ export default function Landing() {
                             <img src={img} class="card-img-top" alt="..." id="imgst"></img>
                             <h5 class="card-title">Cleaning services</h5>
                             <p class="card-text"> Project coming up in future</p>
-                            <a className="btn btn-primary" href="/cleaning"> Read More...</a>
+                            <a className="btn btn-primary" style={{ backgroundColor: "orange", border: "none" }} href="/cleaning"> Read More...</a>
                         </div>
 
                     </div>
@@ -272,7 +363,7 @@ export default function Landing() {
                             <img src={img} class="card-img-top" alt="..." id="imgst"></img>
                             <h5 class="card-title">Fumigation and Pest control</h5>
                             <p class="card-text"> Project coming up in future</p>
-                            <a className="btn btn-primary" href="/fumigation"> Read More...</a>
+                            <a className="btn btn-primary" style={{ backgroundColor: "orange", border: "none" }} href={{}}> Read More...</a>
                         </div>
 
                     </div>
