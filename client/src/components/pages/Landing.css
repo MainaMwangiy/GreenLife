@@ -50,8 +50,6 @@
     flex: 0 0 auto;
     width: 14.285714285%;
 }
-
-
 .partners-img {
     width: 100px;
     height: 100px;
@@ -68,7 +66,6 @@
     .focus-container {
         max-width: 720px;
     }
-
 }
 
 @media (min-width: 992px) {
@@ -100,13 +97,13 @@
         margin: 1rem;
     }
 
-    .partners-img {
+    /* .partners-img {
         width: 60px;
         height: 60px;
         border-radius: 0.5rem;
         margin: 1rem;
         padding: 1rem;
-    }
+    } */
 }
 
 .blog-post {
