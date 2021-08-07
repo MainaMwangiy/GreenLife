@@ -5,9 +5,9 @@ import './about.css'
 
 export default function About() {
     return (
-        <div class="about-post">
-            <div class="about-post-info">
-                <h1 class="about-post-title">
+        <div className="about-post">
+            <div className="about-post-info">
+                <h1 className="about-post-title">
                     Who we are
                 </h1>
                 <p>

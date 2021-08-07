@@ -4,8 +4,8 @@ import "./Footer.css"
 function Footer() {
   return (
     <nav className='footer'>
-      <div class="row row-cols-1 row-cols-md-4 ">
-        <div class="col">
+      <div className="row row-cols-1 row-cols-md-4 ">
+        <div className="col">
           <h2> Contact Us</h2>
           <p>
             Ngei road, John Mulwa Building, 2nd floor
@@ -18,27 +18,27 @@ function Footer() {
             <li><a href="mailto:greenlifeafrika@gmail.com">greenlifeafrika@gmail.com</a>   </li>
           </ul>
         </div>
-        <div class="col">
+        <div className="col">
           <h2>Socialize with us</h2>
           <ul id="list-unstyled">
             <li>
-              <a href="https://web.facebook.com/greenlifeafricake"> <i class="fab fa-facebook"></i> Facebook</a>
+              <a href="https://web.facebook.com/greenlifeafricake"> <i className="fab fa-facebook"></i> Facebook</a>
             </li>
             <li>
-              <a href="https://www.linkedin.com"> <i class="fab fa-linkedin-in"></i> LinkedIn</a>
+              <a href="https://www.linkedin.com"> <i className="fab fa-linkedin-in"></i> LinkedIn</a>
             </li>
             <li>
-              <a href="https://twitter.com/GLIFEAFRICA"> <i class="fab fa-twitter"></i> Twitter</a>
+              <a href="https://twitter.com/GLIFEAFRICA"> <i className="fab fa-twitter"></i> Twitter</a>
             </li>
             <li>
-              <a href="https://www.youtube.com"> <i class="fab fa-youtube"></i> Youtube</a>
+              <a href="https://www.youtube.com"> <i className="fab fa-youtube"></i> Youtube</a>
             </li>
             <li>
-              <a href="https://www.instagram.com/greenlifeafricake/"> <i class="fab fa-instagram"></i> Instagram</a>
+              <a href="https://www.instagram.com/greenlifeafricake/"> <i className="fab fa-instagram"></i> Instagram</a>
             </li>
           </ul>
         </div>
-        <div class="col">
+        <div className="col">
           <h2>Get Involved
           </h2>
           <ul id="list-unstyled">
@@ -50,7 +50,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div class="col">
+        <div className="col">
           <h2>
             Check us Out
           </h2>

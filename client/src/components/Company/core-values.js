@@ -5,8 +5,8 @@ import './core-value.css'
 
 export default function CoreValues() {
     return (
-        <div class="core-value-post">
-            <div class="core-value-post-info">
+        <div className="core-value-post">
+            <div className="core-value-post-info">
                 <h2 >
                     Core Values
                 </h2 >

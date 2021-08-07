@@ -1,11 +1,12 @@
-.focus-container{
+.focus-container {
     width: 100%;
     padding-right: var(--bs-gutter-x, 0.75rem);
     padding-left: var(--bs-gutter-x, 0.75rem);
     margin-right: auto;
     margin-left: auto;
 }
-.focus-row{
+
+.focus-row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
@@ -15,23 +16,26 @@
     margin-left: calc(var(--bs-gutter-x) * -.5);
 }
 
-.focus-col-3{
+.focus-col-3 {
     flex: 0 0 auto;
     width: 25%;
 }
-.focus-img{
+
+.focus-img {
     width: 200px;
     height: 200px;
     border-radius: 1rem;
 }
-.partners-container{
+
+.partners-container {
     width: 100%;
     padding-right: var(--bs-gutter-x, 0.75rem);
     padding-left: var(--bs-gutter-x, 0.75rem);
     margin-right: auto;
     margin-left: auto;
 }
-.partners-row{
+
+.partners-row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
@@ -41,57 +45,70 @@
     margin-left: calc(var(--bs-gutter-x) * -.5);
 }
 
-.partners-col-3{
+.partners-col-3 {
     flex: 0 0 auto;
-    width: 25%;
+    width: 14.285714285%;
 }
-.partners-img{
+
+.partners-col-3 img {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+.partners-img {
     width: 100px;
     height: 100px;
     border-radius: 1rem;
 }
+
 @media (min-width: 576px) {
     .focus-container {
-      max-width: 540px;
+        max-width: 540px;
     }
-  }
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .focus-container {
-      max-width: 720px;
+        max-width: 720px;
     }
 
-  }
-  @media (min-width: 992px) {
+}
+
+@media (min-width: 992px) {
     .focus-container {
-      max-width: 960px;
+        max-width: 960px;
     }
 
-  }
-  @media (min-width: 1200px) {
+}
+
+@media (min-width: 1200px) {
     .focus-container {
-      max-width: 1140px;
+        max-width: 1140px;
     }
 
-  }
-  @media (min-width: 1400px) {
+}
+
+@media (min-width: 1400px) {
     .focus-container {
-      max-width: 1320px;
+        max-width: 1320px;
     }
 
-  }
+}
 
 @media screen and (max-width: 960px) {
-    .focus-img{
+    .focus-img {
         width: 60px;
         height: 60px;
         border-radius: 0.5rem;
         margin: 1rem;
     }
-    .partners-img{
+
+    .partners-img {
         width: 60px;
         height: 60px;
         border-radius: 0.5rem;
         margin: 1rem;
+        padding: 1rem;
     }
 }
 
@@ -138,7 +155,8 @@
     font-size: 1.4rem;
     color: rgba(0, 0, 0, .7);
 }
-.blog-post-info .p{
+
+.blog-post-info .p {
     font-size: 5rem;
 }
 
@@ -247,7 +265,8 @@
         align-items: center;
         justify-content: center;
     }
-/* 
+
+    /* 
     .core-val {
         flex-direction: column;
         margin: 1rem;
@@ -358,13 +377,14 @@
 
 
 @media (max-width: 1024px) {
-    .counts{
+    .counts {
         padding-top: 0;
         position: relative;
         padding-left: 1rem;
         padding-right: 1rem;
         transition-duration: 1s ease;
     }
+
     .counts .image {
         text-align: center;
     }
@@ -1473,6 +1493,7 @@ p {
     margin-top: 0;
     margin-bottom: 1rem;
 }
+
 .nav {
     display: flex;
     flex-wrap: wrap;
@@ -1481,7 +1502,7 @@ p {
     list-style: none;
     border: 0.1px solid rgb(243, 240, 240);
     border-radius: .8rem;
-  }
+}
 
 .nav-link {
     border-radius: .8rem;
@@ -1490,96 +1511,107 @@ p {
     color: orange;
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-  }
-  @media screen and (max-width:960px) {
+}
+
+@media screen and (max-width:960px) {
     .nav-link {
         border-radius: .8rem;
         display: block;
-        padding: 0.5rem 1rem ;
+        padding: 0.5rem 1rem;
         color: orange;
         text-decoration: none;
         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-      }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .nav-link {
-      transition: none;
     }
-  }
-  .nav-link:hover, .nav-link:focus {
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .nav-link {
+        transition: none;
+    }
+}
+
+.nav-link:hover,
+.nav-link:focus {
     color: green;
-  }
-  .nav-link.disabled {
+}
+
+.nav-link.disabled {
     color: #6c757d;
     pointer-events: none;
     cursor: default;
-  }
-  
-  .nav-tabs {
+}
+
+.nav-tabs {
     border-bottom: 1px solid #dee2e6;
-  }
-  .nav-tabs .nav-link {
+}
+
+.nav-tabs .nav-link {
     margin-bottom: -1px;
     background: none;
     border: 1px solid transparent;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
-  }
-  .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
     border-color: #e9ecef #e9ecef #dee2e6;
     isolation: isolate;
-  }
-  .nav-tabs .nav-link.disabled {
+}
+
+.nav-tabs .nav-link.disabled {
     color: #6c757d;
     background-color: transparent;
     border-color: transparent;
-  }
-  .nav-tabs .nav-link.active,
-  .nav-tabs .nav-item.show .nav-link {
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
     color: #495057;
     background-color: #fff;
     border-color: #dee2e6 #dee2e6 #fff;
-  }
-  .nav-tabs .dropdown-menu {
+}
+
+.nav-tabs .dropdown-menu {
     margin-top: -1px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-  }
-  
-  .nav-pills .nav-link {
+}
+
+.nav-pills .nav-link {
     background: none;
     border: 0;
     border-radius: 0.25rem;
-  }
-  .nav-pills .nav-link.active,
-  .nav-pills .show > .nav-link {
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     color: #fff;
     background-color: orange;
-  }
-  
-  .nav-fill > .nav-link,
-  .nav-fill .nav-item {
+}
+
+.nav-fill>.nav-link,
+.nav-fill .nav-item {
     flex: 1 1 auto;
     text-align: center;
-  }
-  
-  .nav-justified > .nav-link,
-  .nav-justified .nav-item {
+}
+
+.nav-justified>.nav-link,
+.nav-justified .nav-item {
     flex-basis: 0;
     flex-grow: 1;
     text-align: center;
-  }
-  
-  .nav-fill .nav-item .nav-link,
-  .nav-justified .nav-item .nav-link {
+}
+
+.nav-fill .nav-item .nav-link,
+.nav-justified .nav-item .nav-link {
     width: 100%;
-  }
-  
-  .tab-content > .tab-pane {
+}
+
+.tab-content>.tab-pane {
     display: none;
-  }
-  .tab-content > .active {
+}
+
+.tab-content>.active {
     display: block;
-  }
-  
-  
+}

@@ -6,13 +6,19 @@ import "../Company/index.css"
 import '../pages/Landing.css'
 import ImageSlider from './ImageSlider';
 import { ImageData } from './ImageData';
-import cntimg from "../assets/counts-img.svg"
 import img from "../assets/school.jpg";
 import goal2 from "../assets/E-WEB-Goal-02.png"
 import goal6 from "../assets/E-WEB-Goal-06.png"
 import goal13 from "../assets/E-WEB-Goal-13.png"
 import goal17 from "../assets/E-WEB-Goal-17.png"
-// import counts from "../assets/school.jpg"
+import kenya_government from "../logo/kenya_government.png"
+import vso from "../logo/vso.jpg"
+import pa from "../logo/pa.jpg"
+import machakos_county from "../logo/machakos_county.jpg"
+import KYCN from "../logo/KYCN.jpeg"
+import Kenya_redcross from "../logo/Kenya_redcross.png"
+import tkh from "../logo/tkh.png"
+import Tabs from "../Tabs/Tabs"
 import About from '../Company/About';
 import CountUp from 'react-countup';
 import CoreValues from '../Company/core-values';
@@ -21,97 +27,17 @@ export default function Landing() {
     return (
         <div>
             <ImageSlider slides={ImageData} />
-            {/* <CarouselImage/> */}
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 ftco-animate p-md-5">
-                        <div class="row py-md-5">
-                            <div class="col-md-12 nav-link-wrap mb-5">
-                                <div
-                                    class="nav ftco-animate nav-pills"
-                                    id="v-pills-tab"
-                                    role="tablist"
-                                    aria-orientation="vertical"
-                                >
-                                    <a
-                                        class="nav-link active"
-                                        id="v-pills-whatwedo-tab"
-                                        data-toggle="pill"
-                                        href="#v-pills-whatwedo"
-                                        role="tab"
-                                        aria-controls="v-pills-whatwedo"
-                                        aria-selected="true"
-                                    > Our Mission</a >
-
-                                    <a
-                                        class="nav-link"
-                                        id="v-pills-mission-tab"
-                                        data-toggle="pill"
-                                        href="#v-pills-mission"
-                                        role="tab"
-                                        aria-controls="v-pills-mission"
-                                        aria-selected="false"
-                                    > Our Vision </a>
-
-                                    <a
-                                        class="nav-link"
-                                        id="v-pills-goal-tab"
-                                        data-toggle="pill"
-                                        href="#v-pills-goal"
-                                        role="tab"
-                                        aria-controls="v-pills-goal"
-                                        aria-selected="false"
-                                    > Core values</a>
-                                </div>
-                            </div>
-                            <div class="col-md-12 d-flex align-items-center">
-                                <div class="tab-content ftco-animate" id="v-pills-tabContent">
-                                    <div
-                                        class="tab-pane fade show active"
-                                        id="v-pills-whatwedo"
-                                        role="tabpanel"
-                                        aria-labelledby="v-pills-whatwedo-tab"
-                                    >
-                                        <div>
-                                            <h2 class="mb-4">Mission</h2>
-                                            <p>
-                                                To promote a healthy and wealthy community through ecofriendly practices
-                                            </p>
-
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        class="tab-pane fade"
-                                        id="v-pills-mission"
-                                        role="tabpanel"
-                                        aria-labelledby="v-pills-mission-tab"
-                                    >
-                                        <div>
-                                            <h2 class="mb-4">Vision</h2>
-                                            <p>
-                                                Green, Healthy, Wealthy, Community!
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        class="tab-pane fade"
-                                        id="v-pills-goal"
-                                        role="tabpanel"
-                                        aria-labelledby="v-pills-goal-tab"
-                                    >
-                                        <div>
-                                            <h2 class="mb-4">Core values</h2>
-                                            <CoreValues />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <Tabs>
+                <div label="Our Mission">
+                    <p>  To promote a healthy and wealthy community through ecofriendly practices</p>
                 </div>
-            </div>
+                <div label="Our Vision">
+                    <p>   Green, Healthy, Wealthy, Community!</p>
+                </div>
+                <div label="Core values">
+                    <CoreValues/>
+                </div>
+            </Tabs>
             <div style={{ textAlign: "center", color: "orange", backgroundColor: "#fff" }}>
                 <h1>
                     Partners
@@ -120,19 +46,31 @@ export default function Landing() {
             <div className="partners-container">
                 <div className="partners-row">
                     <div className="partners-col-3">
-                        <img src={cntimg} alt="partners" className="partners-img"  ></img>
+                        <img src={kenya_government} alt="partners" className="partners-img"  ></img>
 
                     </div>
                     <div className="partners-col-3">
-                        <img src={cntimg} alt="partners" className="partners-img"  ></img>
+                        <img src={Kenya_redcross} alt="partners" className="partners-img"  ></img>
 
                     </div>
                     <div className="partners-col-3">
-                        <img src={cntimg} alt="partners" className="partners-img"   ></img>
+                        <img src={KYCN} alt="partners" className="partners-img"   ></img>
 
                     </div>
                     <div className="partners-col-3">
-                        <img src={cntimg} alt="partners" className="partners-img"   ></img>
+                        <img src={pa} alt="partners" className="partners-img"   ></img>
+
+                    </div>
+                    <div className="partners-col-3">
+                        <img src={machakos_county} alt="partners" className="partners-img"   ></img>
+
+                    </div>
+                    <div className="partners-col-3">
+                        <img src={vso} alt="partners" className="partners-img"   ></img>
+
+                    </div>
+                    <div className="partners-col-3">
+                        <img src={tkh} alt="partners" className="partners-img"   ></img>
 
                     </div>
                 </div>
@@ -140,26 +78,26 @@ export default function Landing() {
 
             <About />
             <CoreValues />
-            <div class="impact-post">
-                <div class="impact-post-info">
+            <div className="impact-post">
+                <div className="impact-post-info">
                     <h1>
                         Impact
                     </h1>
                 </div>
             </div>
-            <section class="counts">
-                <div class="container">
-                    <div class="row">
+            <section className="counts">
+                <div className="container">
+                    <div className="row">
                         <div
-                            class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0"
+                            className="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0"
                             data-aos="fade-left"
                             data-aos-delay="300"
                         >
-                            <div class="content d-flex flex-column justify-content-center">
-                                <div class="row">
-                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                        <div class="count-box" >
-                                            <i class="fa fa-building"></i>
+                            <div className="content d-flex flex-column justify-content-center">
+                                <div className="row">
+                                    <div className="col-md-6 d-md-flex align-items-md-stretch">
+                                        <div className="count-box" >
+                                            <i className="fa fa-building"></i>
                                             <span data-toggle="counter-up">
                                                 <CountUp start={0} end={5} delay={0}>
                                                     {({ countUpRef }) => (
@@ -175,9 +113,9 @@ export default function Landing() {
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                        <div class="count-box" >
-                                            <i class="fa fa-trash"></i>
+                                    <div className="col-md-6 d-md-flex align-items-md-stretch">
+                                        <div className="count-box" >
+                                            <i className="fa fa-trash"></i>
                                             <span data-toggle="counter-up"> <CountUp start={0} end={50} delay={0}>
                                                 {({ countUpRef }) => (
                                                     <div>
@@ -190,9 +128,9 @@ export default function Landing() {
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                        <div class="count-box">
-                                            <i class="fa fa-users"></i>
+                                    <div className="col-md-6 d-md-flex align-items-md-stretch">
+                                        <div className="count-box">
+                                            <i className="fa fa-users"></i>
                                             <span data-toggle="counter-up">
                                                 <CountUp start={0} end={20} delay={0}>
                                                     {({ countUpRef }) => (
@@ -207,9 +145,9 @@ export default function Landing() {
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                        <div class="count-box">
-                                            <i class="fa fa-user-secret"></i>
+                                    <div className="col-md-6 d-md-flex align-items-md-stretch">
+                                        <div className="count-box">
+                                            <i className="fa fa-user-secret"></i>
                                             <span data-toggle="counter-up">
                                                 <CountUp start={0} end={5000} delay={0}>
                                                     {({ countUpRef }) => (
@@ -224,9 +162,9 @@ export default function Landing() {
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                        <div class="count-box">
-                                            <i class="fa fa-tree"></i>
+                                    <div className="col-md-6 d-md-flex align-items-md-stretch">
+                                        <div className="count-box">
+                                            <i className="fa fa-tree"></i>
                                             <span data-toggle="counter-up">
                                                 {/* 6,400+ */}
                                                 <CountUp start={0} end={6400} delay={0}>
@@ -243,9 +181,9 @@ export default function Landing() {
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                        <div class="count-box">
-                                            <i class="fa fa-list-ol" aria-hidden="true"></i>
+                                    <div className="col-md-6 d-md-flex align-items-md-stretch">
+                                        <div className="count-box">
+                                            <i className="fa fa-list-ol" aria-hidden="true"></i>
                                             <span data-toggle="counter-up">
                                                 {/* 1000+  */}
                                                 <CountUp start={0} end={1000} delay={0}>
@@ -262,9 +200,9 @@ export default function Landing() {
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6 d-md-flex align-items-md-stretch">
-                                        <div class="count-box">
-                                            <i class="fa fa-award"></i>
+                                    <div className="col-md-6 d-md-flex align-items-md-stretch">
+                                        <div className="count-box">
+                                            <i className="fa fa-award"></i>
                                             <span data-toggle="counter-up">
                                                 {/* 30,000  */}
                                                 <CountUp start={0} end={30000} delay={0}>
@@ -314,13 +252,13 @@ export default function Landing() {
             </div>
 
 
-            <div class="row row-cols-1 row-cols-md-4 " >
-                <div class="col" >
-                    <div class="card h-100 mb-4 " id="carst">
-                        <div class="card-body">
-                            <img src={img} class="card-img-top" alt="..." id="imgst"></img>
-                            <h5 class="card-title">Garbage collection </h5>
-                            <p class="card-text">The amount of solid waste produced is growing proportionate to
+            <div className="row row-cols-1 row-cols-md-4 " >
+                <div className="col" >
+                    <div className="card h-100 mb-4 " id="carst">
+                        <div className="card-body">
+                            <img src={img} className="card-img-top" alt="..." id="imgst"></img>
+                            <h5 className="card-title">Garbage collection </h5>
+                            <p className="card-text">The amount of solid waste produced is growing proportionate to
                                 the growth in population, which is significantly high in the
                                 urban areas. With a 4.3% growth in urbanization annually
                             </p>
@@ -329,12 +267,12 @@ export default function Landing() {
 
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100 mb-4 " id="carst">
-                        <div class="card-body">
-                            <img src={img} class="card-img-top" alt="..." id="imgst"></img>
-                            <h5 class="card-title">Sanitary bin collection </h5>
-                            <p class="card-text">
+                <div className="col">
+                    <div className="card h-100 mb-4 " id="carst">
+                        <div className="card-body">
+                            <img src={img} className="card-img-top" alt="..." id="imgst"></img>
+                            <h5 className="card-title">Sanitary bin collection </h5>
+                            <p className="card-text">
                                 From small businesses to government facilities,
                                 Green life Africa has the solutions to meet your
                                 washroom needs. We carter for sanitary towels
@@ -346,23 +284,23 @@ export default function Landing() {
 
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100 mb-4 " id="carst">
-                        <div class="card-body">
-                            <img src={img} class="card-img-top" alt="..." id="imgst"></img>
-                            <h5 class="card-title">Cleaning services</h5>
-                            <p class="card-text"> Project coming up in future</p>
+                <div className="col">
+                    <div className="card h-100 mb-4 " id="carst">
+                        <div className="card-body">
+                            <img src={img} className="card-img-top" alt="..." id="imgst"></img>
+                            <h5 className="card-title">Cleaning services</h5>
+                            <p className="card-text"> Project coming up in future</p>
                             <a className="btn btn-primary" style={{ backgroundColor: "orange", border: "none" }} href="/cleaning"> Read More...</a>
                         </div>
 
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100 mb-4 " id="carst">
-                        <div class="card-body">
-                            <img src={img} class="card-img-top" alt="..." id="imgst"></img>
-                            <h5 class="card-title">Fumigation and Pest control</h5>
-                            <p class="card-text"> Project coming up in future</p>
+                <div className="col">
+                    <div className="card h-100 mb-4 " id="carst">
+                        <div className="card-body">
+                            <img src={img} className="card-img-top" alt="..." id="imgst"></img>
+                            <h5 className="card-title">Fumigation and Pest control</h5>
+                            <p className="card-text"> Project coming up in future</p>
                             <a className="btn btn-primary" style={{ backgroundColor: "orange", border: "none" }} href={{}}> Read More...</a>
                         </div>
 
