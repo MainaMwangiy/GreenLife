@@ -4,8 +4,9 @@ import "../pages/animations.css"
 import "../Company/core-value.css"
 import "../Company/index.css"
 import '../pages/Landing.css'
-import ImageSlider from './ImageSlider';
-import { ImageData } from './ImageData';
+import "../Tabs/Tabs.css"
+import CarouselImageSlider from './CarouselImageSlider';
+import { CarouselImageData } from './CarouselImageData';
 import img from "../assets/school.jpg";
 import goal2 from "../assets/E-WEB-Goal-02.png"
 import goal6 from "../assets/E-WEB-Goal-06.png"
@@ -18,6 +19,8 @@ import machakos_county from "../logo/machakos_county.jpg"
 import KYCN from "../logo/KYCN.jpeg"
 import Kenya_redcross from "../logo/Kenya_redcross.png"
 import tkh from "../logo/tkh.png"
+import garbage_collection from "../images/garbage-coll-2.jpg"
+import sanitary from "../images/sanitary-1.jpg"
 import Tabs from "../Tabs/Tabs"
 import About from '../Company/About';
 import CountUp from 'react-countup';
@@ -26,64 +29,25 @@ import CoreValues from '../Company/core-values';
 export default function Landing() {
     return (
         <div>
-            <ImageSlider slides={ImageData} />
+            <CarouselImageSlider slides={CarouselImageData} />
             <Tabs>
-                <div label="Our Mission">
+                <div label="Our Mission" className="label_style">
                     <p>  To promote a healthy and wealthy community through ecofriendly practices</p>
                 </div>
-                <div label="Our Vision">
+                <div label="Our Vision" className="label_style">
                     <p>   Green, Healthy, Wealthy, Community!</p>
                 </div>
-                <div label="Core values">
-                    <CoreValues/>
+                <div label="Core values" className="label_style">
+                    <CoreValues />
                 </div>
             </Tabs>
-            <div style={{ textAlign: "center", color: "orange", backgroundColor: "#fff" }}>
-                <h1>
-                    Partners
-                </h1>
-            </div>
-            <div className="partners-container">
-                <div className="partners-row">
-                    <div className="partners-col-3">
-                        <img src={kenya_government} alt="partners" className="partners-img"  ></img>
-
-                    </div>
-                    <div className="partners-col-3">
-                        <img src={Kenya_redcross} alt="partners" className="partners-img"  ></img>
-
-                    </div>
-                    <div className="partners-col-3">
-                        <img src={KYCN} alt="partners" className="partners-img"   ></img>
-
-                    </div>
-                    <div className="partners-col-3">
-                        <img src={pa} alt="partners" className="partners-img"   ></img>
-
-                    </div>
-                    <div className="partners-col-3">
-                        <img src={machakos_county} alt="partners" className="partners-img"   ></img>
-
-                    </div>
-                    <div className="partners-col-3">
-                        <img src={vso} alt="partners" className="partners-img"   ></img>
-
-                    </div>
-                    <div className="partners-col-3">
-                        <img src={tkh} alt="partners" className="partners-img"   ></img>
-
-                    </div>
-                </div>
-            </div>
 
             <About />
             <CoreValues />
-            <div className="impact-post">
-                <div className="impact-post-info">
-                    <h1>
-                        Impact
-                    </h1>
-                </div>
+            <div className="impact-post-info">
+                <h1>
+                    Impact
+                </h1>
             </div>
             <section className="counts">
                 <div className="container">
@@ -251,12 +215,49 @@ export default function Landing() {
                 </div>
             </div>
 
+            <div style={{ textAlign: "center", color: "orange", backgroundColor: "#fff" }}>
+                <h1>
+                    Partners
+                </h1>
+            </div>
+            <div className="partners-container">
+                <div className="partners-row">
+                    <div className="partners-col-3">
+                        <img src={kenya_government} alt="partners" className="partners-img"  ></img>
+
+                    </div>
+                    <div className="partners-col-3">
+                        <img src={Kenya_redcross} alt="partners" className="partners-img"  ></img>
+
+                    </div>
+                    <div className="partners-col-3">
+                        <img src={KYCN} alt="partners" className="partners-img"   ></img>
+
+                    </div>
+                    <div className="partners-col-3">
+                        <img src={pa} alt="partners" className="partners-img"   ></img>
+
+                    </div>
+                    <div className="partners-col-3">
+                        <img src={machakos_county} alt="partners" className="partners-img"   ></img>
+
+                    </div>
+                    <div className="partners-col-3">
+                        <img src={vso} alt="partners" className="partners-img"   ></img>
+
+                    </div>
+                    <div className="partners-col-3">
+                        <img src={tkh} alt="partners" className="partners-img"   ></img>
+
+                    </div>
+                </div>
+            </div>
 
             <div className="row row-cols-1 row-cols-md-4 " >
                 <div className="col" >
                     <div className="card h-100 mb-4 " id="carst">
                         <div className="card-body">
-                            <img src={img} className="card-img-top" alt="..." id="imgst"></img>
+                            <img src={garbage_collection} className="card-img-top" alt="..." id="imgst"></img>
                             <h5 className="card-title">Garbage collection </h5>
                             <p className="card-text">The amount of solid waste produced is growing proportionate to
                                 the growth in population, which is significantly high in the
@@ -270,7 +271,7 @@ export default function Landing() {
                 <div className="col">
                     <div className="card h-100 mb-4 " id="carst">
                         <div className="card-body">
-                            <img src={img} className="card-img-top" alt="..." id="imgst"></img>
+                            <img src={sanitary} className="card-img-top" alt="..." id="imgst"></img>
                             <h5 className="card-title">Sanitary bin collection </h5>
                             <p className="card-text">
                                 From small businesses to government facilities,

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "./services.css";
-import img from '../assets/school.jpg'
 
 const GarbageCollection = () => {
   const [status, setStatus] = useState("Submit");
@@ -26,15 +25,15 @@ const GarbageCollection = () => {
   return (
     <div className='container'>
       <div className='gb-coll'>
-        <div class="st1-style">
-          <div class="st1-style-img">
-            <img src="https://i.postimg.cc/yNN5vG9p/IMG-9377.jpg" class="card-img-top" alt="..."></img>
+        <div className="st1-style">
+          <div className="st1-style-img">
+            <img src="https://i.postimg.cc/yNN5vG9p/IMG-9377.jpg" className="card-img-top" alt="..."></img>
           </div>
-          <div class="st1-style-info">
-            <div class="st1-style-date">
+          <div className="st1-style-info">
+            <div className="st1-style-date">
               <span>Garbage collection service </span>
             </div>
-            <h1 class="st1-style-title">
+            <h1 className="st1-style-title">
               Usafi mtaani project
             </h1>
             <p>
@@ -60,13 +59,13 @@ const GarbageCollection = () => {
 
             </p>
             <form onSubmit={handleSubmit} style={{ border: "none" }}>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="exampleInputName" required style={{ borderRadius: "1rem" }} placeholder="Enquire about the service..." aria-describedby="nameHelp"></input>
+              <div className="mb-3">
+                <input type="text" className="form-control" id="exampleInputName" required style={{ borderRadius: "1rem" }} placeholder="Enquire about the service..." aria-describedby="nameHelp"></input>
               </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="email" required style={{ borderRadius: "1rem" }} placeholder="Email Adress" aria-describedby="nameHelp"></input>
+              <div className="mb-3">
+                <input type="text" className="form-control" id="email" required style={{ borderRadius: "1rem" }} placeholder="Email Adress" aria-describedby="nameHelp"></input>
               </div>
-              <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%",background:"orange",border:"none" }}>{status}</button>
+              <button type="submit" className="btn btn-primary" style={{ borderRadius: "1rem", width: "100%",background:"orange",border:"none" }}>{status}</button>
             </form>
           </div>
         </div>
