@@ -1,7 +1,7 @@
 .tabs {
   margin-top: 1rem;
   margin-left: 1rem;
-  /* overflow-x: scroll; */
+  text-align: center;
 }
 
 .tab-list {
@@ -23,7 +23,3 @@
   border: solid #ccc;
   border-width: 1px 1px 0 1px;
 }
-
-/* @media screen and (max-width:960px) {
-  
-} */
