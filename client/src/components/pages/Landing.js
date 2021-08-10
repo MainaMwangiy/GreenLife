@@ -43,7 +43,6 @@ export default function Landing() {
             </Tabs>
 
             <About />
-            <CoreValues />
             <div className="impact-post-info">
                 <h1>
                     Impact

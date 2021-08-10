@@ -50,11 +50,13 @@
     flex: 0 0 auto;
     width: 14.285714285%;
 }
+
 .partners-img {
     width: 100px;
     height: 100px;
     border-radius: 1rem;
 }
+
 
 @media (min-width: 576px) {
     .focus-container {
@@ -259,6 +261,7 @@
         align-items: center;
         justify-content: center;
     }
+
     #pstl {
         display: none;
     }

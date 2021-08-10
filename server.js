@@ -82,7 +82,3 @@ if (process.env.NODE_ENV === 'production') {
       res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     });
   }
-
-if(process.env.NODE_ENV === 'development'){
-    console.log("Development")
-}
