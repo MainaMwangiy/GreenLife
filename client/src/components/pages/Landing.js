@@ -21,6 +21,8 @@ import Kenya_redcross from "../logo/Kenya_redcross.png"
 import tkh from "../logo/tkh.png"
 import garbage_collection from "../images/garbage-coll-2.jpg"
 import sanitary from "../images/sanitary-1.jpg"
+import knapsack from "../images/sprayer.jpg"
+import cleaning from "../images/house-cleaning.jpg"
 import Tabs from "../Tabs/Tabs"
 import About from '../Company/About';
 import CountUp from 'react-countup';
@@ -287,7 +289,7 @@ export default function Landing() {
                 <div className="col">
                     <div className="card h-100 mb-4 " id="carst">
                         <div className="card-body">
-                            <img src={img} className="card-img-top" alt="..." id="imgst"></img>
+                            <img src={cleaning} className="card-img-top" alt="..." id="imgst"></img>
                             <h5 className="card-title">Cleaning services</h5>
                             <p className="card-text"> Project coming up in future</p>
                             <a className="btn btn-primary" style={{ backgroundColor: "orange", border: "none" }} href="/cleaning"> Read More...</a>
@@ -298,7 +300,7 @@ export default function Landing() {
                 <div className="col">
                     <div className="card h-100 mb-4 " id="carst">
                         <div className="card-body">
-                            <img src={img} className="card-img-top" alt="..." id="imgst"></img>
+                            <img src={knapsack} className="card-img-top" alt="..." id="imgst"></img>
                             <h5 className="card-title">Fumigation and Pest control</h5>
                             <p className="card-text"> Project coming up in future</p>
                             <a className="btn btn-primary" style={{ backgroundColor: "orange", border: "none" }} href={{}}> Read More...</a>

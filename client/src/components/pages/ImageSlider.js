@@ -60,7 +60,9 @@ const ImageSlider = ({ slides }) => {
               src={image.image}
             />
             {/* Have to style so this should see over the image */}
-            <span style={{color:"red", fontSize:"5rem"}}>{image.text}</span>
+            <span style={{ color: "red", fontSize: "5rem" }}>
+              {image.text}
+            </span>
           </div>
         );
       })}
