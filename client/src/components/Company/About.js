@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../App.css';
 import './about.css'
-// import img from '../assets/logo.svg'
 
 export default function About() {
     return (

@@ -17,11 +17,12 @@ function Navbar() {
 
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
-      setDropdown(false);
+      setDropdown(true);
     } else {
       setDropdown(true);
     }
   };
+  
   const onMouseLeave = () => {
     if (window.innerWidth < 960) {
       setDropdown(false);
@@ -32,7 +33,7 @@ function Navbar() {
 
   const onProductMouseEnter = () => {
     if (window.innerWidth < 960) {
-      setPDropdown(false)
+      setPDropdown(true)
     } else {
       setPDropdown(true)
     }
@@ -48,7 +49,7 @@ function Navbar() {
 
   const onResourcesMouseEnter = () => {
     if (window.innerWidth < 960) {
-      setReDropdown(false)
+      setReDropdown(true)
     } else {
       setReDropdown(true)
     }
@@ -74,7 +75,7 @@ function Navbar() {
         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
       </div>
       <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-      <li className='nav-item'>
+        <li className='nav-item'>
           <Link
             to='/'
             className='nav-links'
@@ -89,7 +90,7 @@ function Navbar() {
           onMouseLeave={onMouseLeave}
         >
           <Link
-            to='/services'
+            // to='/services'
             className='nav-links'
             onClick={closeMobileMenu}
           >
@@ -103,7 +104,7 @@ function Navbar() {
           onMouseLeave={onProductMouseLeave}
         >
           <Link
-            to='/projects'
+            // to='/projects'
             className='nav-links'
             onClick={closeMobileMenu}
           >

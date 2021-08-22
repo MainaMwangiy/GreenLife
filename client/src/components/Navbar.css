@@ -114,7 +114,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(25%, 50%);
+    transform: translate(0.1%, 50%);
   }
 
   .menu-icon {
@@ -129,6 +129,11 @@
 
   .fa-times {
     color: #fff;
+    font-size: 2rem;
+  }
+
+  .fa-bars {
+    color:#fff;
     font-size: 2rem;
   }
 

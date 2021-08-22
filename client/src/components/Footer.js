@@ -6,7 +6,7 @@ function Footer() {
     <nav className='footer'>
       <div className="row row-cols-1 row-cols-md-4 ">
         <div className="col">
-          <h2> Contact Us</h2>
+          <h2 className="h2-style"> Contact Us</h2>
           <p>
             Ngei road, John Mulwa Building, 2nd floor
           </p>
@@ -19,7 +19,7 @@ function Footer() {
           </ul>
         </div>
         <div className="col">
-          <h2>Socialize with us</h2>
+          <h2 className="h2-style"> Socialize with us</h2>
           <ul id="list-unstyled">
             <li>
               <a href="https://web.facebook.com/greenlifeafricake"> <i className="fab fa-facebook"></i> Facebook</a>
@@ -39,7 +39,7 @@ function Footer() {
           </ul>
         </div>
         <div className="col">
-          <h2>Get Involved
+          <h2 className="h2-style">Get Involved
           </h2>
           <ul id="list-unstyled">
             <li>
@@ -51,7 +51,7 @@ function Footer() {
           </ul>
         </div>
         <div className="col">
-          <h2>
+          <h2 className="h2-style">
             Check us Out
           </h2>
           <ul id="list-unstyled">
@@ -74,7 +74,9 @@ function Footer() {
         <p className="text-xs-center" id="ftrst">
           &copy; Green Life Africa 2021- All Rights Reserved
         </p>
+        <a href="#" class="back-to-top"> <i class="fas fa-chevron-up"></i></a>
       </div>
+
     </nav>
 
   );

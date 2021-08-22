@@ -29,27 +29,27 @@ export const ImageData = [
   {
     id: 1,
     image:
-      img1,
+    "https://i.postimg.cc/c1DvzgVD/home-page.jpg",
     text: text
   },
   {
     id: 2,
     image:
-      coll_1
+    "https://i.postimg.cc/05GfKfKz/IMG-9400.jpg"
     ,
     text: text1
   },
   {
     id: 3,
     image:
-      coll_2
+    "https://i.postimg.cc/2yThc0nT/homepage.jpg"
     ,
     text: text1
   },
   {
     id: 4,
     image:
-      collec
+    "https://i.postimg.cc/gJWhGCDN/DSC-8589.jpg"
     ,
     text: text1
   },

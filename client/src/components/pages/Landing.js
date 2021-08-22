@@ -81,7 +81,8 @@ export default function Landing() {
                                     <div className="col-md-6 d-md-flex align-items-md-stretch">
                                         <div className="count-box" >
                                             <i className="fa fa-trash"></i>
-                                            <span data-toggle="counter-up"> <CountUp start={0} end={50} delay={0}>
+                                            <span data-toggle="counter-up"> 
+                                            <CountUp start={0} end={50} delay={0}>
                                                 {({ countUpRef }) => (
                                                     <div>
                                                         <span ref={countUpRef} />
@@ -197,7 +198,7 @@ export default function Landing() {
             </div>
             <div className="focus-container ">
                 <div className="focus-row">
-                    <div className="focus-col-3" data-aos="fade-left" data-aos-delay="200">
+                    <div className="focus-col-3" >
                         <img src={goal2} alt="Focus" className="focus-img animated"  ></img>
 
                     </div>
@@ -254,7 +255,7 @@ export default function Landing() {
                 </div>
             </div>
 
-            <div className="row row-cols-1 row-cols-md-4 " >
+            <div className="row row-cols-1 row-cols-md-4 service-cont" >
                 <div className="col" >
                     <div className="card h-100 mb-4 " id="carst">
                         <div className="card-body">
@@ -303,7 +304,7 @@ export default function Landing() {
                             <img src={knapsack} className="card-img-top" alt="..." id="imgst"></img>
                             <h5 className="card-title">Fumigation and Pest control</h5>
                             <p className="card-text"> Project coming up in future</p>
-                            <a className="btn btn-primary" style={{ backgroundColor: "orange", border: "none" }} href={{}}> Read More...</a>
+                            <a className="btn btn-primary" style={{ backgroundColor: "orange", border: "none" }} href="/fumigation"> Read More...</a>
                         </div>
 
                     </div>
