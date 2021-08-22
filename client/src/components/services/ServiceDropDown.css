@@ -52,7 +52,7 @@
   }
   
   .dropdown-menu.clicked {
-    display: none;
+    display: table-column;
   }
   
   .dropdown-link {

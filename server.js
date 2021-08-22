@@ -8,19 +8,6 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static('client/build'))
 
-// const uri = process.env.URI;
-const URL = process.env.NODE_ENV === 'development' ? "http://localhost:5000" : "https://greenlifeafrica.herokuapp.com"
-function componentDidMount() {
-    axios.get(BACKEND_URL + 'users/')
-        .then(response => {
-            if (response.data.length > 0) {
-                this.setState({ users: response.data.map(user => user.username), username: response.data[0].username });
-            }
-        })
-        .catch((error) => {
-            console.log(error);
-        })
-}
 
 app.use("/", router);
 app.listen(process.env.PORT || 5000, () => console.log("Server Running"));

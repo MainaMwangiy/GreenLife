@@ -3,6 +3,7 @@ import "./project.css"
 import img from '../assets/school.jpg'
 
 export default function EnvironmentalJustice() {
+    const URL = process.env.NODE_ENV === 'development' ? "http://localhost:5000" : "https://greenlifeafrica.herokuapp.com"
     const [status, setStatus] = useState("Submit");
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -12,7 +13,7 @@ export default function EnvironmentalJustice() {
             exampleInputName: exampleInputName.value,
             email: email.value
         };
-        let response = await fetch("http://localhost:5000/service", {
+        let response = await fetch(URL + "/service", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json;charset=utf-8",
@@ -39,10 +40,15 @@ export default function EnvironmentalJustice() {
                             This is a brainchild of the ‘Usafi mtaani project’ (Garbage collection service). As the garbage collecting team were doing their weekly rounds, it was realized that households were disposing off valuables such as clothes, shoes, toys and electronics. It was thought wise the valuables could help
                             the less fortunate in the community. Since 2016, more than 1,000 needy individuals have benefited from the project.
                         </p>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" id="exampleInputName" style={{ borderRadius: "1rem" }} placeholder="Enquire about the program..." aria-describedby="nameHelp"></input>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%",background:"orange",border:"none" }}>Submit</button>
+                        <form onSubmit={handleSubmit} style={{ border: "none" }}>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="exampleInputName" required style={{ borderRadius: "1rem" }} placeholder="Enquire about the service..." aria-describedby="nameHelp"></input>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="email" required style={{ borderRadius: "1rem" }} placeholder="Email Adress" aria-describedby="nameHelp"></input>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style={{ borderRadius: "1rem", width: "100%",background:"orange",border:"none" }}>{status}</button>
+                        </form>
                     </div>
                 </div>
 

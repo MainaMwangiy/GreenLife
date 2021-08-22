@@ -3,6 +3,7 @@ import "./services.css";
 import img from '../assets/school.jpg'
 
 export default function Cleaning() {
+    const URL = process.env.NODE_ENV === 'development' ? "http://localhost:5000" : "https://greenlifeafrica.herokuapp.com"
     const [status, setStatus] = useState("Submit");
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -12,7 +13,7 @@ export default function Cleaning() {
             exampleInputName: exampleInputName.value,
             email: email.value
         };
-        let response = await fetch("http://localhost:5000/service", {
+        let response = await fetch( URL + "/service", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json;charset=utf-8",

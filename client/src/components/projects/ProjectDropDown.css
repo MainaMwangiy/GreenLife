@@ -7,7 +7,6 @@
   }
   
   .prduct-menu li {
-    /* background: #ffb618; */
     background: orange;
     cursor: pointer;
   }
@@ -31,11 +30,39 @@
   }
   
   @media screen and (max-width: 960px) {
-    .fa-caret-down {
+    .fa-caret-down{
       display: block;
     }
-    .prduct-menu{
+    .prduct-menu {
+      width: 200px;
+      position: absolute;
+      top: 80px;
+      list-style: none;
+      text-align: start;
       flex-direction: column;
+    }
+    
+    .prduct-menu li {
+      background: orange;
+      cursor: pointer;
+    }
+    
+    .prduct-menu li.clicked {
+      background: orange;
+      color: #fff;
+    }
+    
+    .prduct-menu.clicked {
+      display: table-column;
+    }
+    
+    .prduct-link {
+      display: block;
+      height: 100%;
+      width: 100%;
+      text-decoration: none;
+      color: #fff;
+      padding: 16px;
     }
   }
   

@@ -22,7 +22,7 @@ function Navbar() {
       setDropdown(true);
     }
   };
-  
+
   const onMouseLeave = () => {
     if (window.innerWidth < 960) {
       setDropdown(false);
@@ -90,7 +90,6 @@ function Navbar() {
           onMouseLeave={onMouseLeave}
         >
           <Link
-            // to='/services'
             className='nav-links'
             onClick={closeMobileMenu}
           >
@@ -104,7 +103,6 @@ function Navbar() {
           onMouseLeave={onProductMouseLeave}
         >
           <Link
-            // to='/projects'
             className='nav-links'
             onClick={closeMobileMenu}
           >
@@ -117,7 +115,7 @@ function Navbar() {
           onMouseLeave={onResourcesMouseLeave}
         >
           <Link
-            to='/'
+            // to='/'
             className='nav-links'
             onClick={closeMobileMenu}
           >
