@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./services.css";
+import garbage_collection from "../images/fummig.jpg"
 
 const GarbageCollection = () => {
   const URL = process.env.NODE_ENV === 'development' ? "http://localhost:5000" : "https://greenlifeafrica.herokuapp.com"
@@ -28,15 +29,13 @@ const GarbageCollection = () => {
       <div className='gb-coll'>
         <div className="st1-style">
           <div className="st1-style-img">
-            <img src="https://i.postimg.cc/yNN5vG9p/IMG-9377.jpg" className="card-img-top" alt="..."></img>
+            {/* <img src="https://i.postimg.cc/yNN5vG9p/IMG-9377.jpg" className="card-img-top" alt="..."></img> */}
+            <img src={garbage_collection} className="card-img-top" alt="..."></img>
           </div>
           <div className="st1-style-info">
             <div className="st1-style-date">
               <span>Garbage collection service </span>
             </div>
-            <h1 className="st1-style-title">
-              Usafi mtaani project
-            </h1>
             <p>
               The amount of solid waste produced is growing proportionate to
               the growth in population, which is significantly high in the

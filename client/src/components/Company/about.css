@@ -10,7 +10,8 @@
     display: flex;
     border-radius: .8rem;
     margin: .8rem;
-    margin-left: 0.9rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     transition-duration: 2s;
     transition: linear;
     font-size: 1.5rem;

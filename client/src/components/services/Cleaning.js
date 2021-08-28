@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./services.css";
-import img from '../assets/school.jpg'
+import cleaning from "../images/house-cleaning.jpg"
 
 export default function Cleaning() {
     const URL = process.env.NODE_ENV === 'development' ? "http://localhost:5000" : "https://greenlifeafrica.herokuapp.com"
@@ -29,15 +29,14 @@ export default function Cleaning() {
             <div className='gb-coll'>
                 <div className="st1-style">
                     <div className="st1-style-img">
-                        <img src="https://i.postimg.cc/2yThc0nT/homepage.jpg" className="card-img-top" alt="..."></img>
+                        {/* <img src="https://i.postimg.cc/2yThc0nT/homepage.jpg" className="card-img-top" alt="..."></img> */}
+                        <img src={cleaning} className="card-img-top" alt="..."></img>
+
                     </div>
                     <div className="st1-style-info">
                         <div className="st1-style-date">
                             <span>Cleaning Services</span>
                         </div>
-                        <h1 className="st1-style-title">
-                            Coming Up
-                        </h1>
                         <p>
                             Project coming up in future
                         </p>

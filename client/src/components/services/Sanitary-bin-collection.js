@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./services.css";
+import sanitary from "../images/sanitary-bin.png"
 
 export default function SanitaryBinCollection() {
     const URL = process.env.NODE_ENV === 'development' ? "http://localhost:5000" : "https://greenlifeafrica.herokuapp.com"
@@ -28,15 +29,13 @@ export default function SanitaryBinCollection() {
             <div className='gb-coll'>
                 <div class="st1-style">
                     <div class="st1-style-img">
-                        <img src="https://i.postimg.cc/rFPtD0jd/school.jpg" class="card-img-top" alt="..."></img>
+                        <img src={sanitary} class="card-img-top" alt="..."></img>
+                        {/* <img src="https://i.postimg.cc/rFPtD0jd/school.jpg" class="card-img-top" alt="..."></img> */}
                     </div>
                     <div class="st1-style-info">
                         <div class="st1-style-date">
                             <span>Sanitary bin collection </span>
                         </div>
-                        <h1 class="st1-style-title">
-                            Sanitary Project
-                        </h1>
                         <p>
                             From small businesses to government facilities,
                             Green life Africa has the solutions to meet your

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import "./project.css"
 import img from '../assets/school.jpg'
+import trash2cash from "../images/Trash2Cash.jpg"
+import planting from "../images/planting.jpg"
 
 export default function EnvironmentalJustice() {
     const URL = process.env.NODE_ENV === 'development' ? "http://localhost:5000" : "https://greenlifeafrica.herokuapp.com"
@@ -30,6 +32,8 @@ export default function EnvironmentalJustice() {
                 <div class="st1-style">
                     <div class="st1-style-img">
                         <img src="https://i.postimg.cc/05GfKfKz/IMG-9400.jpg" class="card-img-top" alt="..."></img>
+
+
                     </div>
                     <div class="st1-style-info">
 
@@ -86,7 +90,8 @@ export default function EnvironmentalJustice() {
             <div className='gb-coll'>
                 <div class="st3-style">
                     <div class="st3-style-img">
-                        <img src="https://i.postimg.cc/gJWhGCDN/DSC-8589.jpg" class="card-img-top" alt="..."></img>
+                        {/* <img src="https://i.postimg.cc/gJWhGCDN/DSC-8589.jpg" class="card-img-top" alt="..."></img> */}
+                        <img src={trash2cash} class="card-img-top" alt="..."></img>
                     </div>
                     <div class="st3-style-info">
 
@@ -124,7 +129,7 @@ export default function EnvironmentalJustice() {
             <div className='gb-coll'>
                 <div class="st4-style">
                     <div class="st4-style-img">
-                        <img src={img} class="card-img-top" alt="..."></img>
+                        <img src={planting} class="card-img-top" alt="..."></img>
                     </div>
                     <div class="st4-style-info">
 

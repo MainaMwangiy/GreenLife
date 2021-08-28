@@ -35,8 +35,6 @@ export default function FoodSecurityAndNutrition() {
                         <div class="st1-style-date">
                             <span>Agroecology (seed sovereignty) </span>
                         </div>
-                        <h1 class="st1-style-title">
-                        </h1>
                         <p>
                             Seeds are the first link in the food chain and the repository of life’s future evolution. As such it is our inherent duty and responsibility to protect them and to pass them on to future generations. It is evident from the current trends that the indigenous fruit trees are becoming extinct with the adoption of genetically modified seeds.
                             This poses a threat to fruit biodiversity and food security if action is not taken.

@@ -15,6 +15,7 @@ function Footer() {
             <li><a href="tel://0700889921">+254700889921</a>  </li>
             <li><a href="tel://0725606635">+254725606635</a>   </li>
             <li><a href="tel://0734317856">+254734317856</a>    </li>
+            <li><a href="tel://0734367853">+254734367853</a>    </li>
             <li><a href="mailto:greenlifeafrika@gmail.com">greenlifeafrika@gmail.com</a>   </li>
           </ul>
         </div>
