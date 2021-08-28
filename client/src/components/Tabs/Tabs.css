@@ -2,12 +2,14 @@
   margin-top: 1rem;
   margin-left: 1rem;
   text-align: center;
+  
 }
 
 .tab-list {
   border-bottom: 1px solid #ccc;
   padding-left: 0;
   padding-right: 2rem;
+
 }
 
 .tab-list-item {
@@ -15,6 +17,7 @@
   list-style: none;
   margin-bottom: -1px;
   padding: 0.5rem 0.75rem;
+
 }
 
 .tab-list-active {
@@ -22,4 +25,5 @@
   color: orange;
   border: solid #ccc;
   border-width: 1px 1px 0 1px;
+
 }

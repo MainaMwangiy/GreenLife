@@ -13,20 +13,22 @@
     margin-left: 0.9rem;
     transition-duration: 2s;
     transition: linear;
+    /* align-items:"center"; */
+    padding-left: 10rem;
 }
 .core-value-post-title {
     font-size: 2.5rem;
     margin: 1.5rem 0 2rem;
     text-transform: uppercase;
     color: orange;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .core-value-post-info h2{
     font-size: 1.5rem; 
     color: orange;
     text-transform: uppercase;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .impact-post {

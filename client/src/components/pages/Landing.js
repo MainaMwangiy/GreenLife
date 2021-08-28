@@ -29,17 +29,18 @@ import CountUp from 'react-countup';
 import CoreValues from '../Company/core-values';
 
 export default function Landing() {
+    const URL = process.env.NODE_ENV === 'development' ? "http://localhost:3000" : "https://greenlifeafrica.herokuapp.com";
     return (
         <div>
             <CarouselImageSlider slides={CarouselImageData} />
-            <Tabs>
-                <div label="Our Mission" className="label_style">
-                    <p>  To promote a healthy and wealthy community through ecofriendly practices</p>
+            <Tabs >
+                <div label="Our Mission"  >
+                    <p style={{ paddingTop: "4rem", fontSize:"1.8rem" }}>  To promote a healthy and wealthy community through ecofriendly practices</p>
                 </div>
-                <div label="Our Vision" className="label_style">
-                    <p>   Green, Healthy, Wealthy, Community!</p>
+                <div label="Our Vision" >
+                    <p style={{ paddingTop: "4rem", fontSize:"1.8rem" }}>   Green, Healthy, Wealthy, Community!</p>
                 </div>
-                <div label="Core values" className="label_style">
+                <div label="Core values" >
                     <CoreValues />
                 </div>
             </Tabs>
@@ -81,14 +82,14 @@ export default function Landing() {
                                     <div className="col-md-6 d-md-flex align-items-md-stretch">
                                         <div className="count-box" >
                                             <i className="fa fa-trash"></i>
-                                            <span data-toggle="counter-up"> 
-                                            <CountUp start={0} end={50} delay={0}>
-                                                {({ countUpRef }) => (
-                                                    <div>
-                                                        <span ref={countUpRef} />
-                                                    </div>
-                                                )}
-                                            </CountUp></span>
+                                            <span data-toggle="counter-up">
+                                                <CountUp start={0} end={50} delay={0}>
+                                                    {({ countUpRef }) => (
+                                                        <div>
+                                                            <span ref={countUpRef} />
+                                                        </div>
+                                                    )}
+                                                </CountUp></span>
                                             <p>
                                                 <strong>tons of waste </strong>collected weekly: every week we collect waste from hundreds of households and commercial and industrial clients across Machakos town.
                                             </p>
@@ -265,7 +266,7 @@ export default function Landing() {
                                 the growth in population, which is significantly high in the
                                 urban areas. With a 4.3% growth in urbanization annually
                             </p>
-                            <a className="btn btn-primary" style={{ backgroundColor: "orange", border: "none" }} href="/garbage-collection"> Read More...</a>
+                            <a className="btn btn-primary" style={{ backgroundColor: "orange", border: "none" }} href={URL+"/garbage-collection"}> Read More...</a>
                         </div>
 
                     </div>
@@ -282,7 +283,7 @@ export default function Landing() {
                                 disposal in commercial buildings, schools and
                                 institutions...
                             </p>
-                            <a className="btn btn-primary" style={{ backgroundColor: "orange", border: "none" }} href="/sanitary-bin-collection"> Read More...</a>
+                            <a className="btn btn-primary" style={{ backgroundColor: "orange", border: "none" }} href={URL+"/sanitary-bin-collection"}> Read More...</a>
                         </div>
 
                     </div>
@@ -293,7 +294,7 @@ export default function Landing() {
                             <img src={cleaning} className="card-img-top" alt="..." id="imgst"></img>
                             <h5 className="card-title">Cleaning services</h5>
                             <p className="card-text"> Project coming up in future</p>
-                            <a className="btn btn-primary" style={{ backgroundColor: "orange", border: "none" }} href="/cleaning"> Read More...</a>
+                            <a className="btn btn-primary" style={{ backgroundColor: "orange", border: "none" }} href={URL+ "/cleaning"}> Read More...</a>
                         </div>
 
                     </div>
@@ -304,7 +305,7 @@ export default function Landing() {
                             <img src={knapsack} className="card-img-top" alt="..." id="imgst"></img>
                             <h5 className="card-title">Fumigation and Pest control</h5>
                             <p className="card-text"> Project coming up in future</p>
-                            <a className="btn btn-primary" style={{ backgroundColor: "orange", border: "none" }} href="/fumigation"> Read More...</a>
+                            <a className="btn btn-primary" style={{ backgroundColor: "orange", border: "none" }} href={URL+ "/fumigation"}> Read More...</a>
                         </div>
 
                     </div>

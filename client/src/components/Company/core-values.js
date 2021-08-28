@@ -10,11 +10,11 @@ export default function CoreValues() {
                     Core Values
                 </h2 >
                 <ul id="ulstyl">
-                    <li> 	Professionalism and work ethics in every service we offer</li>
-                    <li>	Credibility, honesty and Integrity in our relationship and services we undertake.</li>
-                    <li>	Confidentiality. We take our clients trust in us with utmost seriousness.</li>
-                    <li>  Innovativeness and creativity in our services.</li>
-                    <li>	Transparency and openness to our clients in our undertakings</li>
+                    <li> 	<strong>Professionalism </strong> and work ethics in every service we offer</li>
+                    <li>	<strong>Credibility</strong>, <strong>honesty</strong> and <strong>Integrity</strong> in our relationship and services we undertake.</li>
+                    <li>	<strong>Confidentiality</strong>. We take our clients trust in us with utmost seriousness.</li>
+                    <li>  <strong>Innovativeness</strong> and <strong>creativity</strong> in our services.</li>
+                    <li>	<strong>Transparency</strong> and <strong>openness</strong> to our clients in our undertakings</li>
 
                 </ul>
             </div>
