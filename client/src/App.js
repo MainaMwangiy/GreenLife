@@ -25,6 +25,7 @@ import Careers from './components/Resources/Careers'
 import ProjectReports from './components/Resources/ProjectReports'
 
 function App() {
+  const URL = process.env.NODE_ENV === 'production' ? "https://greenlifeafrica.herokuapp.com" : "http://localhost:3000";
   return (
     <Router>
       <Navbar />
@@ -36,7 +37,7 @@ function App() {
         <Route path='/projects' component={Project} />  
         <Route path='/garbage-collection' component={GarbageCollection} />
         <Route path='/sanitary-bin-collection' component={SanitaryBinCollection} />
-        <Route path='/cleaning' component={Cleaning} />
+        <Route path= {URL + '/cleaning'} component={Cleaning} />
         <Route path='/fumigation' component={Fumigation} />
         <Route path='/environmental-justice' component={EnvironmentalJustice} />
         <Route path='/food-security-and-nutrition' component={FoodSecurityAndNutrition} />

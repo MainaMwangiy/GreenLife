@@ -29,7 +29,7 @@ import CountUp from 'react-countup';
 import CoreValues from '../Company/core-values';
 
 export default function Landing() {
-    const URL = process.env.NODE_ENV === 'development' ? "http://localhost:3000" : "https://greenlifeafrica.herokuapp.com";
+    const URL = process.env.NODE_ENV === 'production' ? "https://greenlifeafrica.herokuapp.com" : "http://localhost:3000";
     return (
         <div>
             <CarouselImageSlider slides={CarouselImageData} />
