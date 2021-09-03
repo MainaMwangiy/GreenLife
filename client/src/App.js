@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './App.css';
 import { HashRouter, BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
 import Services from './components/services/Services';
 import Project from './components/projects/Project';
 import GarbageCollection from './components/services/Garbage-Collection';
