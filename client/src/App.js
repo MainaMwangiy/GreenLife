@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './App.css';
 import { HashRouter, BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 import Services from './components/services/Services';
 import Project from './components/projects/Project';
 import GarbageCollection from './components/services/Garbage-Collection';
@@ -25,10 +26,9 @@ import Careers from './components/Resources/Careers'
 import ProjectReports from './components/Resources/ProjectReports'
 
 function App() {
-  const URL = process.env.NODE_ENV === 'development' ? "http://localhost:3000" : "https://greenlifeafrica.herokuapp.com";
   return (
     <HashRouter>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Navbar />
         <Switch >``
           <Route path='/' exact component={Landing} />
