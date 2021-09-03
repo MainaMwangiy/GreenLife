@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter, BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Services from './components/services/Services';
 import Project from './components/projects/Project';
 import GarbageCollection from './components/services/Garbage-Collection';
@@ -25,34 +25,36 @@ import Careers from './components/Resources/Careers'
 import ProjectReports from './components/Resources/ProjectReports'
 
 function App() {
-  const URL = process.env.NODE_ENV === 'production' ? "https://greenlifeafrica.herokuapp.com" : "http://localhost:3000";
+  const URL = process.env.NODE_ENV === 'development' ? "http://localhost:3000" : "https://greenlifeafrica.herokuapp.com";
   return (
-    <Router>
-      <Navbar />
-      <Switch >``
-        <Route path='/' exact component={Landing} />
-        <Route path='/about' component={About} />
-        <Route path='/core-values' component={CoreValues} />
-        <Route path='/services' component={Services} />
-        <Route path='/projects' component={Project} />  
-        <Route path='/garbage-collection' component={GarbageCollection} />
-        <Route path='/sanitary-bin-collection' component={SanitaryBinCollection} />
-        <Route path= {URL + '/cleaning'} component={Cleaning} />
-        <Route path='/fumigation' component={Fumigation} />
-        <Route path='/environmental-justice' component={EnvironmentalJustice} />
-        <Route path='/food-security-and-nutrition' component={FoodSecurityAndNutrition} />
-        <Route path='/contact-us' component={ContactUs} />
-        <Route path='/sign-up' component={SignUp} />
-        <Route path='/news-letters' component={NewsLetters} />
-        <Route path='/careers' component={Careers} />
-        <Route path='/project-reports' component={ProjectReports} />
-        <Route path='/gallery' component={Gallery} />
-        <Route path='/donate' component={Donate} />
-        <Route path='/volunteer' component={volunteer} />
-        <Route path="/get-involved" component={Getinvolved}/>
-      </Switch>
-      <Footer/>
-    </Router>
+    <HashRouter>
+      <Router>
+        <Navbar />
+        <Switch >``
+          <Route path='/' exact component={Landing} />
+          <Route path='/about' component={About} />
+          <Route path='/core-values' component={CoreValues} />
+          <Route path='/services' component={Services} />
+          <Route path='/projects' component={Project} />
+          <Route path='/garbage-collection' component={GarbageCollection} />
+          <Route path='/sanitary-bin-collection' component={SanitaryBinCollection} />
+          <Route path='/cleaning' component={Cleaning} />
+          <Route path='/fumigation' component={Fumigation} />
+          <Route path='/environmental-justice' component={EnvironmentalJustice} />
+          <Route path='/food-security-and-nutrition' component={FoodSecurityAndNutrition} />
+          <Route path="/contact-us" component={ContactUs} />
+          <Route path='/sign-up' component={SignUp} />
+          <Route path='/news-letters' component={NewsLetters} />
+          <Route path='/careers' component={Careers} />
+          <Route path='/project-reports' component={ProjectReports} />
+          <Route path='/gallery' component={Gallery} />
+          <Route path='/donate' component={Donate} />
+          <Route path='/volunteer' component={volunteer} />
+          <Route path="/get-involved" component={Getinvolved} />
+        </Switch>
+        <Footer />
+      </Router>
+    </HashRouter>
   );
 }
 

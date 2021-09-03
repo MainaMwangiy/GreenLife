@@ -8,7 +8,6 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static('client/build'))
 
-
 app.use("/", router);
 app.listen(process.env.PORT || 5000, () => console.log("Server Running"));
 const contactEmail = nodemailer.createTransport({
@@ -85,3 +84,11 @@ if (process.env.NODE_ENV === 'production') {
         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     });
 }
+
+app.get('/*', function(req, res) {   
+    res.sendFile(path.join(__dirname, 'path/to/your/index.html'), function(err) {
+      if (err) {
+        res.status(500).send(err)
+      }
+    })
+  })

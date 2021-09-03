@@ -21,7 +21,8 @@
     "react-responsive-carousel": "^3.2.19",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^1.1.5",
-    "react-transition-group": "^4.4.2"
+    "react-transition-group": "^4.4.2",
+    "homepage":"http://greenlifeafrica.herokuapp.com/"
   },
   "scripts": {
     "start": "react-scripts start",
