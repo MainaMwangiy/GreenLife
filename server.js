@@ -85,6 +85,7 @@ if (process.env.NODE_ENV === 'production') {
     });
 }
 
+
 // serve static assets normally
 app.use(express.static(__dirname + '/public'))
 

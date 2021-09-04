@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './App.css';
-import { HashRouter, BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Services from './components/services/Services';
 import Project from './components/projects/Project';
 import GarbageCollection from './components/services/Garbage-Collection';
@@ -26,7 +26,6 @@ import ProjectReports from './components/Resources/ProjectReports'
 
 function App() {
   return (
-    <HashRouter>
       <Router basename={process.env.PUBLIC_URL}>
         <Navbar />
         <Switch >``
@@ -53,7 +52,6 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-    </HashRouter>
   );
 }
 
