@@ -75,6 +75,8 @@ function Footer() {
         <p className="text-xs-center" id="ftrst">
           &copy; Green Life Africa 2021- All Rights Reserved
         </p>
+        <h6> Developed by <a href="tel://0702898390"> Charles</a> with <a href="https://fastlinker-resume.herokuapp.com/"> fastlink tech</a>
+        </h6>
         <a href="#" class="back-to-top"> <i class="fas fa-chevron-up"></i></a>
       </div>
 
