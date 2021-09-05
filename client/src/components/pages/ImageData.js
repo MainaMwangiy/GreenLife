@@ -1,7 +1,3 @@
-import img1 from "../images/cans.jpg"
-import coll_1 from "../images/coll-1.jpg"
-import coll_2 from "../images/coll-2.jpg"
-import collec from "../images/collec.jpg"
 import education from "../images/education.jpg"
 import field from "../images/field.jpg"
 import fummig from "../images/fummig.jpg"
@@ -17,13 +13,6 @@ import watering from "../images/watering.jpg"
 import green_environ from "../images/green-environ.jpg"
 const text = "GreenLife";
 const text1 = "GreenLife";
-const text2 = "GreenLife";
-const text3 = "GreenLife";
-const text4 = "GreenLife";
-const text5 = "GreenLife";
-const text6 = "GreenLife";
-const text7 = "GreenLife";
-const text8 = "GreenLife";
 
 export const ImageData = [
   {

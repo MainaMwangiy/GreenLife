@@ -1,12 +1,4 @@
 import img1 from "../images/cans.jpg"
-import coll_1 from "../images/coll-1.jpg"
-import coll_2 from "../images/coll-2.jpg"
-import education from "../images/education.jpg"
-import field from "../images/field.jpg"
-import plant from "../images/plant.jpg"
-import planting from "../images/planting.jpg"
-import sanitary from "../images/sanitary-1.jpg"
-import watering from "../images/watering.jpg"
 
 export const CarouselImageData = [
     {
